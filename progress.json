@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-public-progress/1",
-  "generated_at": "2026-10-18T08:51:46.421830+00:00",
+  "generated_at": "2026-10-18T08:54:38.512090+00:00",
   "source": "https://github.com/Etaing4/joi-workbench-entry/issues",
   "cohort_policy": "follow-up only; never frozen baseline",
   "entries": [
@@ -219,9 +219,33 @@
       "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/10",
       "updated_at": "2026-10-18T08:50:44Z",
       "qa": false
+    },
+    {
+      "entry_id": "FU-f6c7cc8d-d89d-446c-af4d-1d2b3b0eea74",
+      "cohort": {
+        "id": "FOLLOWUP-7ae08e6c-69f9-45a3-bd29-b5ae6bc64be4",
+        "kind": "follow-up",
+        "retry_of": null
+      },
+      "state": "submitted",
+      "review_state": "pending",
+      "tracks": {
+        "A": "completed",
+        "B": "completed",
+        "C": "completed",
+        "D": "completed",
+        "E": "blocked",
+        "F": "partial",
+        "G": "blocked"
+      },
+      "identity_evidence": "self_reported_unverified",
+      "account_authentication": "github_issue_author",
+      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/11",
+      "updated_at": "2026-10-18T08:54:23Z",
+      "qa": false
     }
   ],
-  "entrant_count": 9,
+  "entrant_count": 10,
   "qa_count": 1,
   "duplicate_count": 0,
   "invalid_count": 0,
