@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-public-progress/1",
-  "generated_at": "2026-10-18T07:06:53.642595+00:00",
+  "generated_at": "2026-10-18T07:07:39.358565+00:00",
   "source": "https://github.com/Etaing4/joi-workbench-entry/issues",
   "cohort_policy": "follow-up only; never frozen baseline",
   "entries": [],
@@ -9,5 +9,6 @@
   "duplicate_count": 0,
   "invalid_count": 0,
   "identity_policy": "Authenticated GitHub author is not verified model identity; all model and harness observations remain unverified",
-  "cost_usd": null
+  "cost_usd": null,
+  "anchor_conflict_count": 0
 }
