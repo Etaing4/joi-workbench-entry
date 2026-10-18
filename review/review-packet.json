@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-review/1",
-  "generated_at": "2026-10-18T11:56:24.906332+00:00",
+  "generated_at": "2026-10-18T14:59:55.964031+00:00",
   "baseline": {
     "source_sha256": "797681b3af559a0700c137c1cf0345de5760665c5f643872cbb00e287620d8c1",
     "counts": {
@@ -4613,9 +4613,9 @@
     {
       "entry_id": "E01",
       "scope": "original_A-G",
-      "status": "R2 persisted; provider billing-blocked",
+      "status": "R2 CREDIT BLOCKED \u00b7 Nous credits; no execution/top-up/substitution",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -5231,16 +5231,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). All seven original accepted R2 prompt deliveries remain verified; these are not seven hand-ins. Nous credit blocked; no top-up, execution or model substitution. H production unverified and separately clocked. Parent evidence observed in prior approved delivery snapshot. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E01",
       "scope": "H_supplement",
-      "status": "R2 persisted; provider billing-blocked",
+      "status": "R2 H CREDIT BLOCKED \u00b7 production unverified \u00b7 R2 CREDIT BLOCKED \u00b7 Nous credits; no execution/top-up/substitution",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -5651,16 +5651,16 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). All seven original accepted R2 prompt deliveries remain verified; these are not seven hand-ins. Nous credit blocked; no top-up, execution or model substitution. H production unverified and separately clocked. Parent evidence observed in prior approved delivery snapshot. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E02",
       "scope": "original_A-G",
-      "status": "R2 persisted; provider billing-blocked",
+      "status": "R2 CREDIT BLOCKED \u00b7 Nous credits; no execution/top-up/substitution",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -6276,16 +6276,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). All seven original accepted R2 prompt deliveries remain verified; these are not seven hand-ins. Nous credit blocked; no top-up, execution or model substitution. H production unverified and separately clocked. Parent evidence observed in prior approved delivery snapshot. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E02",
       "scope": "H_supplement",
-      "status": "R2 persisted; provider billing-blocked",
+      "status": "R2 H CREDIT BLOCKED \u00b7 production unverified \u00b7 R2 CREDIT BLOCKED \u00b7 Nous credits; no execution/top-up/substitution",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -6696,16 +6696,16 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). All seven original accepted R2 prompt deliveries remain verified; these are not seven hand-ins. Nous credit blocked; no top-up, execution or model substitution. H production unverified and separately clocked. Parent evidence observed in prior approved delivery snapshot. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E03",
       "scope": "original_A-G",
-      "status": "R2 persisted; task-tool result observed; substantive reply unobserved",
+      "status": "R2 FAILED/PARTIAL \u00b7 context full (65251 of 65536 tokens) \u00b7 local closure audited; remote closure unknown",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -7330,16 +7330,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Earlier batch had HTTP200 and persisted prompt without substantive reply. Current saved receipt records a later task-tool milestone where present; substantive model response remains unknown. No endpoint probe or interruption. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). Exact original native Hermes / glm-5.3-abliterated-ring-experimental / requested equinox; not the separate AEGIS recovery. Native completed:false, partial:true, failure_reason:truncated. All 18 recorded inference POSTs HTTP200; configured 65536-token pin and terminal 65251 of 65536 usage establish a post-response truncation/headroom stop, not an established preflight refusal or HTTP endpoint denial. Raw final finish_reason unavailable; any larger advertised capacity is unverified. Read-only closure audit ended: all 12 integrity checks pass; frozen baseline and original 82 history rows unchanged. 46 local derived files; only the shared implementation differs; no separate E\u2013H hand-ins found locally. No protected own session found in the exact derived workspace: remote counts, files, submissions and receipts UNKNOWN/null, not zero. No verified final hand-in; no compression, new run, recovery or service change. Active R1/R2/H and actual cost unknown/null. Parent evidence observed 2026-10-18T14:52:36.207870+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Earlier batch had HTTP200 and persisted prompt without substantive reply. Current saved receipt records a later task-tool milestone where present; substantive model response remains unknown. No endpoint probe or interruption. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E03",
       "scope": "H_supplement",
-      "status": "R2 persisted; task-tool result observed; substantive reply unobserved",
+      "status": "R2 H CONTEXT BLOCKED \u00b7 local H hand-in not found; remote inventory unknown \u00b7 R2 FAILED/PARTIAL \u00b7 context full (65251 of 65536 tokens) \u00b7 local closure audited; remote closure unknown",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -7759,7 +7759,7 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Earlier batch had HTTP200 and persisted prompt without substantive reply. Current saved receipt records a later task-tool milestone where present; substantive model response remains unknown. No endpoint probe or interruption. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). Exact original native Hermes / glm-5.3-abliterated-ring-experimental / requested equinox; not the separate AEGIS recovery. Native completed:false, partial:true, failure_reason:truncated. All 18 recorded inference POSTs HTTP200; configured 65536-token pin and terminal 65251 of 65536 usage establish a post-response truncation/headroom stop, not an established preflight refusal or HTTP endpoint denial. Raw final finish_reason unavailable; any larger advertised capacity is unverified. Read-only closure audit ended: all 12 integrity checks pass; frozen baseline and original 82 history rows unchanged. 46 local derived files; only the shared implementation differs; no separate E\u2013H hand-ins found locally. No protected own session found in the exact derived workspace: remote counts, files, submissions and receipts UNKNOWN/null, not zero. No verified final hand-in; no compression, new run, recovery or service change. Active R1/R2/H and actual cost unknown/null. Parent evidence observed 2026-10-18T14:52:36.207870+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Earlier batch had HTTP200 and persisted prompt without substantive reply. Current saved receipt records a later task-tool milestone where present; substantive model response remains unknown. No endpoint probe or interruption. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
@@ -7768,7 +7768,7 @@
       "scope": "original_A-G",
       "status": "blocked",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -8328,7 +8328,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -8700,9 +8700,9 @@
     {
       "entry_id": "E05",
       "scope": "original_A-G",
-      "status": "R2 policy correction admitted; task execution observed; completion pending",
+      "status": "R2 FINALIZED PARTIAL \u00b7 42 received paths \u00b7 receipt R-806fb7c6-17d3-4beb-9786-dfeac40635f9 \u00b7 observed_not_accepted",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -9390,16 +9390,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). Finalized partial submission, not a whole-artifact quality pass. A\u2013E required mechanical paths present/ungraded; F/G partial; H blocked. 156 historical hashes and prior ZIP preserved. Native Hermes / gpt-6-astra / openai-codex recovery ended. Active A\u2013G, H time and H cost remain unknown/null. Actual submission receipt R-806fb7c6-17d3-4beb-9786-dfeac40635f9, observed 2026-10-18T14:32:27.531927+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:40:30.819663+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E05",
       "scope": "H_supplement",
-      "status": "R2 policy correction admitted; task execution observed; completion pending",
+      "status": "R2 H BLOCKED \u00b7 no H film; active time/cost unknown \u00b7 R2 FINALIZED PARTIAL \u00b7 42 received paths \u00b7 receipt R-806fb7c6-17d3-4beb-9786-dfeac40635f9 \u00b7 observed_not_accepted",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -9882,16 +9882,16 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). Finalized partial submission, not a whole-artifact quality pass. A\u2013E required mechanical paths present/ungraded; F/G partial; H blocked. 156 historical hashes and prior ZIP preserved. Native Hermes / gpt-6-astra / openai-codex recovery ended. Active A\u2013G, H time and H cost remain unknown/null. Actual submission receipt R-806fb7c6-17d3-4beb-9786-dfeac40635f9, observed 2026-10-18T14:32:27.531927+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:40:30.819663+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E06",
       "scope": "original_A-G",
-      "status": "R2 policy correction admitted; task execution observed; completion pending",
+      "status": "R2 FINALIZED PARTIAL \u00b7 10 received paths \u00b7 receipt R-94aa61f2-e200-434c-8f6d-dbe4919fcb99 \u00b7 observed_not_accepted",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -10579,16 +10579,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). finalized:true; publish_review:false. A\u2013D required mechanical paths present/ungraded; E tests and F/G direct files missing; H blocked. Archive 12 chunks retained, complete:null; archive finalization attempted 5 times, last HTTP503, no chunks retransmitted. Partial submission receipt is separate from archive finalization. This does not establish all storage offline; specific cause remains under separate read-only investigation. No retry loop or new execution. Native Hermes / gpt-6.1-sol / openai-codex recovery ended. Active A\u2013G, H time and H cost unknown/null. Actual submission receipt R-94aa61f2-e200-434c-8f6d-dbe4919fcb99, observed 2026-10-18T14:45:24.291618+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:53:16.417962+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E06",
       "scope": "H_supplement",
-      "status": "R2 policy correction admitted; task execution observed; completion pending",
+      "status": "R2 H BLOCKED \u00b7 no H film; active time/cost unknown \u00b7 R2 FINALIZED PARTIAL \u00b7 10 received paths \u00b7 receipt R-94aa61f2-e200-434c-8f6d-dbe4919fcb99 \u00b7 observed_not_accepted",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -11071,16 +11071,16 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). finalized:true; publish_review:false. A\u2013D required mechanical paths present/ungraded; E tests and F/G direct files missing; H blocked. Archive 12 chunks retained, complete:null; archive finalization attempted 5 times, last HTTP503, no chunks retransmitted. Partial submission receipt is separate from archive finalization. This does not establish all storage offline; specific cause remains under separate read-only investigation. No retry loop or new execution. Native Hermes / gpt-6.1-sol / openai-codex recovery ended. Active A\u2013G, H time and H cost unknown/null. Actual submission receipt R-94aa61f2-e200-434c-8f6d-dbe4919fcb99, observed 2026-10-18T14:45:24.291618+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:53:16.417962+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E07",
       "scope": "original_A-G",
-      "status": "R2 network correction admitted; task execution observed; completion pending",
+      "status": "R2 FINALIZED PARTIAL \u00b7 67 received paths \u00b7 receipt R-f4e63042-603d-48cd-9bc1-1ce0894fe4c1 \u00b7 observed_not_accepted",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -11768,16 +11768,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). finalized:true; publish_review:false. A\u2013F required mechanical paths present/ungraded; G partial; H blocked. Shared implementation, result and root manifest now received; 164 prepared references remain absent; root reference check:false. Root is invalid despite mechanical A\u2013F presence; not quality acceptance. Prior archives retained; no production redo. Native Codex / gpt-6-astra bounded transport ended. Active A\u2013G, H time and H cost unknown/null. Actual submission receipt R-f4e63042-603d-48cd-9bc1-1ce0894fe4c1, observed 2026-10-18T14:41:55.784983+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:45:47.384649+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E07",
       "scope": "H_supplement",
-      "status": "R2 network correction admitted; task execution observed; completion pending",
+      "status": "R2 H BLOCKED \u00b7 no H film; active time/cost unknown \u00b7 R2 FINALIZED PARTIAL \u00b7 67 received paths \u00b7 receipt R-f4e63042-603d-48cd-9bc1-1ce0894fe4c1 \u00b7 observed_not_accepted",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -12260,16 +12260,16 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). finalized:true; publish_review:false. A\u2013F required mechanical paths present/ungraded; G partial; H blocked. Shared implementation, result and root manifest now received; 164 prepared references remain absent; root reference check:false. Root is invalid despite mechanical A\u2013F presence; not quality acceptance. Prior archives retained; no production redo. Native Codex / gpt-6-astra bounded transport ended. Active A\u2013G, H time and H cost unknown/null. Actual submission receipt R-f4e63042-603d-48cd-9bc1-1ce0894fe4c1, observed 2026-10-18T14:41:55.784983+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:45:47.384649+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E08",
       "scope": "original_A-G",
-      "status": "R2 network correction admitted; task execution observed; completion pending",
+      "status": "R2 NONFINALIZED PARTIAL RETURN \u00b7 2 received paths \u00b7 receipt R-9114d9fe-cbe5-44cd-9ef7-c741004f2529 \u00b7 observed_not_accepted",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -12957,16 +12957,16 @@
             "provenance": "local_controller",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). finalized:false; publish_review:false. 2 received paths with pinned bodies verified; 235 not uploaded; all 237 local files preserved. A\u2013D partial; E\u2013H blocked; no H film. Original omitted active field had a backend placeholder 0, not a measured zero. Proof-based owner correction sets active_seconds:null (UNKNOWN), preserving original FU/cohort/registration/identity, 243 protected hashes and transcript prefix. This is provenance correction, not measured time reset. Native Codex transport ended. Active A\u2013G, H time and H cost unknown/null. Actual submission receipt R-9114d9fe-cbe5-44cd-9ef7-c741004f2529, observed 2026-10-18T14:17:58.620731+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:43:44.044464+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E08",
       "scope": "H_supplement",
-      "status": "R2 network correction admitted; task execution observed; completion pending",
+      "status": "R2 H BLOCKED \u00b7 no H film; active time/cost unknown \u00b7 R2 NONFINALIZED PARTIAL RETURN \u00b7 2 received paths \u00b7 receipt R-9114d9fe-cbe5-44cd-9ef7-c741004f2529 \u00b7 observed_not_accepted",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "instruction_requested",
@@ -13449,7 +13449,7 @@
             "provenance": "unavailable",
             "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
+          "overlap_note": "As of 2026-10-18T14:59:55.964031+00:00 (dated reporting snapshot, not a live process dashboard). finalized:false; publish_review:false. 2 received paths with pinned bodies verified; 235 not uploaded; all 237 local files preserved. A\u2013D partial; E\u2013H blocked; no H film. Original omitted active field had a backend placeholder 0, not a measured zero. Proof-based owner correction sets active_seconds:null (UNKNOWN), preserving original FU/cohort/registration/identity, 243 protected hashes and transcript prefix. This is provenance correction, not measured time reset. Native Codex transport ended. Active A\u2013G, H time and H cost unknown/null. Actual submission receipt R-9114d9fe-cbe5-44cd-9ef7-c741004f2529, observed 2026-10-18T14:17:58.620731+00:00; server receipt status observed_not_accepted is not quality acceptance. Parent evidence observed 2026-10-18T14:43:44.044464+00:00. Mechanical presence/transport success is not quality acceptance. Existing 10 supplied baseline/external films are not 10 H films or completed submissions. No new model-active claim; observer/diagnostic jobs are not model activity. H clock and Eng judgment remain separate/pending. Historical delivery/access note (earlier checkpoint, retained; current return status above supersedes its pending-return wording): Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
@@ -13458,7 +13458,7 @@
       "scope": "original_A-G",
       "status": "blocked",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -14018,7 +14018,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -14392,7 +14392,7 @@
       "scope": "original_A-G",
       "status": "blocked",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -14952,7 +14952,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -15326,7 +15326,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-dbee2fe4-593a-445f-a9c7-905022980752",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -15887,7 +15887,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-dbee2fe4-593a-445f-a9c7-905022980752",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -16261,7 +16261,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-777f2859-49a2-4c1a-9df0-56bce31a6cbc",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -16822,7 +16822,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-777f2859-49a2-4c1a-9df0-56bce31a6cbc",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -17196,7 +17196,7 @@
       "scope": "original_A-G",
       "status": "not_submitted",
       "comparison_group": "FOLLOWUP-9b6937a2-cc0a-4d34-a87f-9223a8898d47",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -17757,7 +17757,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-9b6937a2-cc0a-4d34-a87f-9223a8898d47",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -18131,7 +18131,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-bd739d7e-2556-45ac-a885-96b1ace6552a",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -18692,7 +18692,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-bd739d7e-2556-45ac-a885-96b1ace6552a",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -19066,7 +19066,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-97c64dc0-77bc-4594-8ae6-2c5a97d0c79a",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -19627,7 +19627,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-97c64dc0-77bc-4594-8ae6-2c5a97d0c79a",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -20001,7 +20001,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-3f74e53d-a083-4695-8d25-cbc626f6fb0d",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -20562,7 +20562,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-3f74e53d-a083-4695-8d25-cbc626f6fb0d",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -20936,7 +20936,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-d93d4d99-c7ea-4c81-94a0-4e8840a2ccfd",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -21497,7 +21497,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-d93d4d99-c7ea-4c81-94a0-4e8840a2ccfd",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -21871,7 +21871,7 @@
       "scope": "original_A-G",
       "status": "partial",
       "comparison_group": "FOLLOWUP-7ae08e6c-69f9-45a3-bd29-b5ae6bc64be4",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [
         {
           "kind": "stopped",
@@ -22442,7 +22442,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-7ae08e6c-69f9-45a3-bd29-b5ae6bc64be4",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -22816,7 +22816,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-7ffe8626-149c-4acf-a20e-bd5536a83c47",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -23377,7 +23377,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-7ffe8626-149c-4acf-a20e-bd5536a83c47",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -23751,7 +23751,7 @@
       "scope": "original_A-G",
       "status": "not_submitted",
       "comparison_group": "FOLLOWUP-91b7074c-80fa-4759-9e9d-738ab32af878",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -24312,7 +24312,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-91b7074c-80fa-4759-9e9d-738ab32af878",
-      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "snapshot_at": "2026-10-18T14:59:55.964031+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {

@@ -22,7 +22,7 @@
     ['Entry / condition', 'Original controller wall', 'First useful / verified completion', 'Completeness'].forEach(x => head.append(el('th', x))); speedTable.append(head);
     for (const t of (packet.timing || []).filter(t => t.scope === 'original_A-G')) {
       const f = packet.followups.find(f => f.id === t.entry_id);
-      const tr = el('tr'); [t.entry_id + ' · ' + t.comparison_group, measure(t.measurements.elapsed_seconds), 'Useful: ' + measure(t.measurements.time_to_first_useful_artifact_seconds) + '; complete set: ' + measure(t.measurements.time_to_complete_set_seconds), f ? f.finalization + ' / not fully accepted' : packet.baseline.identities.some(i => i.entrant_id === t.entry_id) ? 'Baseline cells below; not fully accepted' : 'Registered; artifact scope unobserved'].forEach(x => tr.append(el('td', x))); speedTable.append(tr);
+      const tr = el('tr'); [t.entry_id + ' · ' + t.comparison_group, measure(t.measurements.elapsed_seconds), 'Useful: ' + measure(t.measurements.time_to_first_useful_artifact_seconds) + '; complete set: ' + measure(t.measurements.time_to_complete_set_seconds), t.rounds.R2.prompt_sha256 ? t.status + ' / not quality accepted' : f ? f.finalization + ' / not fully accepted' : packet.baseline.identities.some(i => i.entrant_id === t.entry_id) ? 'Baseline cells below; not fully accepted' : 'Registered; artifact scope unobserved'].forEach(x => tr.append(el('td', x))); speedTable.append(tr);
     }
     tableWrap.append(speedTable); speed.append(tableWrap);
     for (const t of (packet.timing || []).filter(t => t.scope === 'original_A-G')) {
@@ -32,7 +32,7 @@
         for (const [track, v] of Object.entries(round.per_track)) { const row = el('tr'); const timed = field => v[field] ? v[field] + ' [' + ((v.field_provenance || {})[field] || 'unavailable') + ']' : 'unknown'; [track, timed('resumed_start_at'), timed('first_useful_artifact_at'), timed('delivered_at'), timed('first_verified_pass_at'), 'per-cell; exact events below'].forEach(x => row.append(el('td', x))); table.append(row); } wrap.append(table); d.append(wrap);
         const known = Object.entries(round.measurements).filter(([_, v]) => v.seconds !== null); d.append(el('p', known.length ? 'Measured/reported breakdown: ' + known.map(([k, v]) => k + ': ' + measure(v)).join('; ') : 'Setup / queue / generation / render / transport / retries / rework / review / collector breakdown unavailable; no guessed subtraction.')); pretty(d, round);
       }
-      const h = (packet.timing || []).find(h => h.entry_id === t.entry_id && h.scope === 'H_supplement'); if (h) { d.append(el('h3', 'H · independent supplemental clock'), el('p', 'H elapsed: ' + measure(h.measurements.elapsed_seconds) + '; H active: ' + measure(h.measurements.active_seconds) + '. Eng creativity judgment is separate from speed and tool reach.')); pretty(d, h); }
+      const h = (packet.timing || []).find(h => h.entry_id === t.entry_id && h.scope === 'H_supplement'); if (h) { d.append(el('h3', 'H · independent supplemental clock'), el('p', h.status), el('p', 'H elapsed: ' + measure(h.measurements.elapsed_seconds) + '; H active: ' + measure(h.measurements.active_seconds) + '. Eng creativity judgment is separate from speed and tool reach.')); pretty(d, h); }
       t.limitations.forEach(x => d.append(el('p', x, 'muted'))); pretty(d, t.events); speed.append(d);
     }
     const creativeIDs = [...new Set((packet.creative_tracks || []).map(c => c.entry_id))];
@@ -47,6 +47,8 @@
     for (const identity of packet.baseline.identities) {
       const d = el('details'); d.id = identity.entrant_id; const cells = packet.baseline.cells.filter(c => c.entrant_id === identity.entrant_id);
       d.append(el('summary', `${identity.entrant_id} · ${identity.label}`), el('p', `${identity.application} · model ${identity.model || 'unknown'} · source-reported identity; not independently attested.`, 'muted'));
+      const checkpoint = (packet.timing || []).find(t => t.entry_id === identity.entrant_id && t.scope === 'original_A-G' && t.rounds.R2.prompt_sha256);
+      if (checkpoint) d.append(el('p', 'R2 dated return checkpoint: ' + checkpoint.status, 'warning'), el('p', checkpoint.rounds.R2.overlap_note, 'muted'));
       const wrap = el('div', undefined, 'table-wrap'), table = el('table'), row = el('tr'); ['Track', 'Disposition', 'Functional evidence', 'Literal acceptance'].forEach(x => row.append(el('th', x))); table.append(row);
       for (const c of cells) { const tr = el('tr'); [c.track, c.disposition, c.functional_total === null ? 'Unobserved / see evidence' : `${c.functional_passed}/${c.functional_total}`, c.acceptance === true ? 'Source reports accepted' : 'Not accepted'].forEach(x => tr.append(el('td', x))); table.append(tr); }
       wrap.append(table); d.append(wrap); pretty(d, cells); document.getElementById('baseline-list').append(d);
