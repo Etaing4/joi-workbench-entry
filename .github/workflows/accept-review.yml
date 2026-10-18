@@ -1,0 +1,21 @@
+name: Anonymous public review acceptance
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  readback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify all public review files and exact supplied films
+        run: python3 .github/scripts/accept_review.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: public-review-acceptance
+          path: static-acceptance.json
+          retention-days: 30
