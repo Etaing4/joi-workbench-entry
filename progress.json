@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-public-progress/1",
-  "generated_at": "2026-10-18T08:28:51.871428+00:00",
+  "generated_at": "2026-10-18T08:29:15.057266+00:00",
   "source": "https://github.com/Etaing4/joi-workbench-entry/issues",
   "cohort_policy": "follow-up only; never frozen baseline",
   "entries": [
@@ -8,6 +8,30 @@
       "entry_id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8",
       "cohort": {
         "id": "FOLLOWUP-7ffe8626-149c-4acf-a20e-bd5536a83c47",
+        "kind": "follow-up",
+        "retry_of": null
+      },
+      "state": "running",
+      "review_state": "pending",
+      "tracks": {
+        "A": "completed",
+        "B": "completed",
+        "C": "completed",
+        "D": "completed",
+        "E": "not_attempted",
+        "F": "not_attempted",
+        "G": "not_attempted"
+      },
+      "identity_evidence": "self_reported_unverified",
+      "account_authentication": "github_issue_author",
+      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/2#issuecomment-6247642864",
+      "updated_at": "2026-10-18T08:29:06Z",
+      "qa": false
+    },
+    {
+      "entry_id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925",
+      "cohort": {
+        "id": "FOLLOWUP-dbee2fe4-593a-445f-a9c7-905022980752",
         "kind": "follow-up",
         "retry_of": null
       },
@@ -24,32 +48,8 @@
       },
       "identity_evidence": "self_reported_unverified",
       "account_authentication": "github_issue_author",
-      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/2#issuecomment-6247624224",
-      "updated_at": "2026-10-18T08:26:50Z",
-      "qa": false
-    },
-    {
-      "entry_id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925",
-      "cohort": {
-        "id": "FOLLOWUP-dbee2fe4-593a-445f-a9c7-905022980752",
-        "kind": "follow-up",
-        "retry_of": null
-      },
-      "state": "running",
-      "review_state": "pending",
-      "tracks": {
-        "A": "not_attempted",
-        "B": "not_attempted",
-        "C": "not_attempted",
-        "D": "not_attempted",
-        "E": "not_attempted",
-        "F": "not_attempted",
-        "G": "not_attempted"
-      },
-      "identity_evidence": "self_reported_unverified",
-      "account_authentication": "github_issue_author",
-      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/3",
-      "updated_at": "2026-10-18T08:28:38Z",
+      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/3#issuecomment-6247642542",
+      "updated_at": "2026-10-18T08:29:04Z",
       "qa": false
     }
   ],
