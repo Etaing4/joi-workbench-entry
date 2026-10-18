@@ -24,7 +24,9 @@ def encode(d,artifact_urls=(),qa=False):
 
 def decode(body):
  if not isinstance(body,str) or not body.startswith(MARKER):raise ValueError('not a portal record')
- x=entry.parse_json(body[len(MARKER):].encode());entry.validate(x['submission'])
+ x=entry.parse_json(body[len(MARKER):].encode())
+ if not isinstance(x,dict) or set(x)!={'portal_version','qa','artifact_urls','submission'} or type(x['portal_version']) is not int or x['portal_version']!=1 or type(x['qa']) is not bool or not isinstance(x['artifact_urls'],list) or any(not isinstance(u,str) for u in x['artifact_urls']):raise ValueError('invalid portal envelope')
+ encode(x['submission'],x['artifact_urls'],x['qa'])
  return x
 
 def project(issue,comments):
@@ -72,17 +74,31 @@ def publish(path,issue=None,artifact_urls=(),qa=False):
  if read.get('body')!=body or read.get('user',{}).get('login')!=actor:raise ValueError('remote readback mismatch; inspect issue before retry')
  return {'entry_id':d['entry_id'],'issue':number,'receipt_url':read['html_url'],'sha256':entry.digest(body.encode()),'review_state':'pending','identity_authority':'GitHub author authenticated; model/harness self-reported, unverified','assignment_url':'https://etaing4.github.io/joi-workbench-entry/PARTICIPANT.md','cost_usd':None,'qa':qa}
 
-def collect(include_private=False):
+def collect(include_private=False,ledger=None,include_ledger=False):
+ ledger={} if ledger is None else ledger;anchor_conflicts=0;observed_issues=set()
  rows=pages('repos/'+REPO+'/issues?state=all&sort=created&direction=asc');out=[];private=[];seen=set();qa=duplicates=invalid=0
  for issue in rows:
-  if 'pull_request' in issue or not str(issue.get('body','')).startswith(MARKER):continue
-  try:r=project(issue,pages('repos/'+REPO+'/issues/'+str(issue['number'])+'/comments'))
+  if 'pull_request' in issue:continue
+  issue_key=str(issue['number']);observed_issues.add(issue_key)
+  if not str(issue.get('body','')).startswith(MARKER):
+   if issue_key in ledger:anchor_conflicts+=1
+   continue
+  comments=pages('repos/'+REPO+'/issues/'+str(issue['number'])+'/comments')
+  key=str(issue['number']);observed={'initial_sha256':entry.digest(issue['body'].encode()),'author_sha256':entry.digest(issue['user']['login'].encode()),'comments':{str(c['id']):entry.digest(c['body'].encode()) for c in comments if c.get('user',{}).get('login')==issue['user']['login'] and str(c.get('body','')).startswith(MARKER)}}
+  old=ledger.get(key)
+  if old and (any(old[k]!=observed[k] for k in ['initial_sha256','author_sha256']) or any(observed['comments'].get(k)!=v for k,v in old['comments'].items())):
+   anchor_conflicts+=1;continue
+  try:r=project(issue,comments)
   except (ValueError,KeyError,TypeError,RecursionError):invalid+=1;continue
+  ledger[key]=observed
   if r['public']['qa']:qa+=1;continue
   eid=r['submission']['entry_id']
   if eid in seen:duplicates+=1;continue
   seen.add(eid);out.append(r['public']);private.append(r)
  result={'schema_version':'joi-public-progress/1','generated_at':entry.now(),'source':'https://github.com/'+REPO+'/issues','cohort_policy':'follow-up only; never frozen baseline','entries':out,'entrant_count':len(out),'qa_count':qa,'duplicate_count':duplicates,'invalid_count':invalid,'identity_policy':'Authenticated GitHub author is not verified model identity; all model and harness observations remain unverified','cost_usd':None}
+ anchor_conflicts+=len(set(ledger)-observed_issues)
+ result['anchor_conflict_count']=anchor_conflicts
+ if include_ledger:result['_ledger']=ledger
  if include_private:result['private_records']=private
  return result
 

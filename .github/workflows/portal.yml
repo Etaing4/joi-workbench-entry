@@ -31,12 +31,12 @@ jobs:
       - name: Generate minimized pending-only feed
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 -c 'import json,portal; open("progress.json","w").write(json.dumps(portal.collect(),indent=2)+"\n")'
+        run: python3 -c 'import json,portal; ledger=json.load(open("intake-ledger.json")); result=portal.collect(ledger=ledger,include_ledger=True); json.dump(result.pop("_ledger"),open("intake-ledger.json","w"),indent=2); json.dump(result,open("progress.json","w"),indent=2)'
       - name: Preserve feed on owned repository
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add progress.json
+          git add progress.json intake-ledger.json
           if ! git diff --cached --quiet; then
             git commit -m "Update minimized follow-up progress feed"
             git push origin HEAD:main

@@ -11,6 +11,7 @@
     "packet/FILEMAP.json": "Honest open-protocol status and public stimulus location.",
     "packet/common/roster.json": "Removed baseline route roster; public follow-ups use independently generated FU IDs.",
     "packet/common/submission.schema.json": "Derived FU identity and marker patterns; baseline schema untouched.",
+    "packet/common/validate_submission.py": "Corrected historical structural output-wrapper inconsistency to match the unwrapped fixture contract; no gold or correctness evaluator added.",
     "packet/update_receipt.json": "Synthetic common participant stimulus; public in advance, not gold/evaluator code.",
     "PARTICIPANT.md": "Public protocol/transport override; all seven original task contracts retained."
   },
@@ -18,8 +19,8 @@
   "members": [
     {
       "path": "PARTICIPANT.md",
-      "bytes": 8243,
-      "sha256": "cfa2b22bc13e7c72f6d07283a8807be87f79ebb0fb79ef3c264ed12a25415aaf"
+      "bytes": 8577,
+      "sha256": "2dd624a3e77c9a7c2bb41c56cb79dec09e6f5aa926203bd63f6273fac9388342"
     },
     {
       "path": "packet/ABCD/CONTRACT.md",
@@ -183,8 +184,8 @@
     },
     {
       "path": "packet/common/validate_submission.py",
-      "bytes": 10944,
-      "sha256": "d45e9dbcb1ddaad096b15a16d14c95b9fbefdcbf23b2526e15e803544401201c"
+      "bytes": 10911,
+      "sha256": "d9796edcac59fa540bd30a560def17e7e9f2f5db0dbacab43aa4391cf693014b"
     },
     {
       "path": "packet/contracts/TRACK_E.md",

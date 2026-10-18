@@ -202,10 +202,15 @@ def main(argv=None):
     a=s.add_parser('import'); a.add_argument('file'); a.add_argument('--inbox',required=True)
     a=s.add_parser('adapt'); a.add_argument('file'); a.add_argument('--source',required=True,choices=['cloud-bot','hosted-attachment']); a.add_argument('--output',required=True)
     a=s.add_parser('detect'); a.add_argument('cli',nargs='+',choices=['python','codex','claude','hermes'])
+    a=s.add_parser('send'); a.add_argument('file'); a.add_argument('--issue',type=int); a.add_argument('--artifact-url',action='append',default=[]); a.add_argument('--qa',action='store_true'); a.add_argument('--confirm-public',action='store_true')
     args=p.parse_args(argv)
     try:
         if args.command=='register':
             d=register(args.label,args.model,args.harness,args.retry_of); d['identity']['installed_cli']=detect_cli(args.detect); write_json(args.output,d,True); result=d
+        elif args.command=='send':
+            if not args.confirm_public:raise ValueError('--confirm-public required: benchmark metadata and artifact URLs will be public')
+            import portal
+            result=portal.publish(args.file,args.issue,args.artifact_url,args.qa)
         elif args.command=='detect':result=detect_cli(args.cli)
         elif args.command=='adapt':
             text=Path(args.file).read_bytes()
