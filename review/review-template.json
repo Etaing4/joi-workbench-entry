@@ -1,0 +1,21 @@
+{
+  "id": "REPLACE-unique-review-id",
+  "entry_id": "E05",
+  "phase_id": "original",
+  "track": "G",
+  "role": "independent_reviewer",
+  "reviewed_at": "REPLACE-UTC-ISO8601",
+  "verdict": "not_reviewed",
+  "reviewer": {
+    "label": "REPLACE-reviewer-label",
+    "model": null,
+    "application": "REPLACE-reviewing-application",
+    "identity_provenance": "self_claimed_unverified"
+  },
+  "evidence_asset_ids": [],
+  "rationale": "REPLACE-evidence-grounded-assessment; no implicit acceptance",
+  "limitations": [
+    "REPLACE-unavailable-material-and-unreviewed-gates"
+  ],
+  "packet_source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

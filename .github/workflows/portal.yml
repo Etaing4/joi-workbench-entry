@@ -45,6 +45,8 @@ jobs:
         run: |
           mkdir _site
           cp index.html *.js *.py *.md *.json *.zip _site/
+          mkdir _site/review
+          cp review/index.html review/app.js review/style.css review/review-packet.json review/review-packet.schema.json review/review-assessment.schema.json review/review-template.json review/REVIEWER-INSTRUCTIONS.md review/privacy-manifest.json review/baseline.csv review/checksums.json _site/review/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

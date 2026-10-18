@@ -1,0 +1,12 @@
+{
+  "api_url": "https://shortly-works-resulted-marriage.trycloudflare.com",
+  "protocol_version": "joi-access-equalized/2",
+  "generation": 1,
+  "protocol_sha256": "7957e9ff1f3bf346a0d3ab54043f8c9109ee29af22b34714c0807c698a8e0743",
+  "observed_at": "2026-10-18T10:06:16+00:00",
+  "invitation_ready": false,
+  "availability_state": "remote_writes_rate_limited",
+  "blocker": "Private HF durable store returned HTTP429: repository commit creation limited to128/hour. Earlier external12-client/code/media/grade/review/cold-readback passed. Idle-heartbeat commit defect repaired; current write recovery and sustained entrant capacity remain unverified. Do not start or restart entrants from this bootstrap.",
+  "availability": "Owned coordinator, tunnel and isolated worker require max4; temporary route, no uptime guarantee.",
+  "review_url": "https://etaing4.github.io/joi-workbench-entry/review/"
+}

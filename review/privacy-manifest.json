@@ -1,0 +1,330 @@
+{
+  "schema_version": "joi-public-privacy/1",
+  "canonical_source_sha256": "797681b3af559a0700c137c1cf0345de5760665c5f643872cbb00e287620d8c1",
+  "policy": "Allowlisted derived baseline and explicitly privacy/provenance-reviewed submitted assets only; no active raw answers, local paths, capabilities, withheld cases or gold. URL approval is not rights clearance.",
+  "assets": [
+    {
+      "id": "E05-captions",
+      "entry_id": "E05",
+      "sha256": "d00e4c2ea3f91bf402b29f62c43bc660ff84430b0ecfaffa6f4d13526dad1560",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E05-G-captions.srt"
+    },
+    {
+      "id": "E05-video",
+      "entry_id": "E05",
+      "sha256": "702d6d1a8d3ec9c82cda93354c708e198fe6159cd072ecaa8d727eb4ec78d296",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E05-G-original.mp4"
+    },
+    {
+      "id": "E05-rights",
+      "entry_id": "E05",
+      "sha256": "300e92019f6f59727ca0c9c155636d12da5656a38fc05582ef828ca92f7cda87",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E05-G-rights.txt"
+    },
+    {
+      "id": "E05-source",
+      "entry_id": "E05",
+      "sha256": "39cb13746af7b7949aa52820cea33403bd0ad126d53e9779fd4cfef901560cd3",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E05-G-source.zip"
+    },
+    {
+      "id": "E05-technical",
+      "entry_id": "E05",
+      "sha256": "fe5220c5988c052eabf5d355dac8b42f021b852ab43c929b06f28cabaf329d38",
+      "kind": "technical",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E05-G-technical.json"
+    },
+    {
+      "id": "E06-captions",
+      "entry_id": "E06",
+      "sha256": "ed67e839dcac699661c65170073c8ebc56fd264195cc1fc572ff917b92255994",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E06-G-captions.srt"
+    },
+    {
+      "id": "E06-video",
+      "entry_id": "E06",
+      "sha256": "9191d65d6205b0298b1639fe1db815482eafa9f33671c47e7d316f62a86e46de",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E06-G-original.mp4"
+    },
+    {
+      "id": "E06-rights",
+      "entry_id": "E06",
+      "sha256": "d4a1338599925bb3dd06b732ce41a07a914008c1584409b248c64d8b849f8423",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E06-G-rights.txt"
+    },
+    {
+      "id": "E06-source",
+      "entry_id": "E06",
+      "sha256": "2eb40fea0966e8eadee4e93fcacbcf4ac295d7d7b19281d9f7dc66b69a39e9d1",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E06-G-source.zip"
+    },
+    {
+      "id": "E06-technical",
+      "entry_id": "E06",
+      "sha256": "0b1237d590908142e64665f7f28a495d47f21bba21566f06db057aeca2ee192c",
+      "kind": "technical",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E06-G-technical.json"
+    },
+    {
+      "id": "E07-captions",
+      "entry_id": "E07",
+      "sha256": "da122ea777b2d53a9271da66ddd78abc9806cfc0bb9fe866b06c305720e6fa9f",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E07-G-captions.srt"
+    },
+    {
+      "id": "E07-video",
+      "entry_id": "E07",
+      "sha256": "7cba1ca78f902033820d1cea374f0f8cdcee530ed891991d4433a78983c13886",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E07-G-original.mp4"
+    },
+    {
+      "id": "E07-rights",
+      "entry_id": "E07",
+      "sha256": "8dc1dd9dc1ab3aeddbc12ab04d3edfca0a733d238867d9c09ba4ce2bf7283230",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E07-G-rights.txt"
+    },
+    {
+      "id": "E07-source",
+      "entry_id": "E07",
+      "sha256": "ad46e96fba25a167b562146db6ff187da3e3d68e13037014c2f0cba199a112a5",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E07-G-source.zip"
+    },
+    {
+      "id": "E07-technical",
+      "entry_id": "E07",
+      "sha256": "3cf0ee66d3d550a012dd2cff00cafc723d7cc06183f84377d2dbb2a41730d860",
+      "kind": "technical",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E07-G-technical.json"
+    },
+    {
+      "id": "E08-captions",
+      "entry_id": "E08",
+      "sha256": "478461b97e077da5cdd10690235d88e205c80c1d90837bf93cf980db980c7a6e",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E08-G-captions.srt"
+    },
+    {
+      "id": "E08-video",
+      "entry_id": "E08",
+      "sha256": "2b9620708207f03f8622316194db7e0a8208579227a4c7c89e7975ccad104837",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E08-G-original.mp4"
+    },
+    {
+      "id": "E08-rights",
+      "entry_id": "E08",
+      "sha256": "f8834d2314601c30634e24105033640732a9368bdfc5162561a46d16adb0eb51",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E08-G-rights.txt"
+    },
+    {
+      "id": "E08-source",
+      "entry_id": "E08",
+      "sha256": "04b1f266db9585da7a4d219623e92d839636570190bf789ae22cec6dd35d9e49",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E08-G-source.zip"
+    },
+    {
+      "id": "E08-technical",
+      "entry_id": "E08",
+      "sha256": "501174a6fef5f3c199ff96b33a27e7e16210459411ef937406d5b8635293a8dd",
+      "kind": "technical",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/E08-G-technical.json"
+    },
+    {
+      "id": "E05-rubric",
+      "entry_id": "E05",
+      "sha256": "fef9e0bc133c06a8ac0e016fbbe9cae32ab6e55daa5316f73d650609018fbcfd",
+      "kind": "rubric",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-originals-20261018/public-rubric-contracts.zip"
+    },
+    {
+      "id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925-captions",
+      "entry_id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925",
+      "sha256": "f4e86d153a78388b1b643378d25ec0ea3330c16cad1ac072213e9b9872e99361",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-1a86471c-G-captions.srt"
+    },
+    {
+      "id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925-video",
+      "entry_id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925",
+      "sha256": "77c9f56136dbdaceaea6e43a72c3d1ac2a53ab72d9d5ca6c46b847d9eb116227",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-1a86471c-G-pilot.mp4"
+    },
+    {
+      "id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925-rights",
+      "entry_id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925",
+      "sha256": "420659a67d1770b4297285ba08562253c0609fa27ad04e0c2278128bb688fd3d",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-1a86471c-G-rights.json"
+    },
+    {
+      "id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925-source",
+      "entry_id": "FU-1a86471c-5bcf-4113-8e71-93d75242d925",
+      "sha256": "dd6d297a5dbf8251d99fde189035c238a9e96ac877300de9dc935e7fb376903b",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-1a86471c-G-source.zip"
+    },
+    {
+      "id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117-captions",
+      "entry_id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117",
+      "sha256": "f1e26de82e00705115a55a8f957a96057299d9d2b7727f30621e2d0019ddc7da",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-515bc6d7-G-captions.srt"
+    },
+    {
+      "id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117-video",
+      "entry_id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117",
+      "sha256": "7b7d398d9d13c343609eaea19bb2feeaed72bba9352ac761d403b3c11f0d1632",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-515bc6d7-G-pilot.mp4"
+    },
+    {
+      "id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117-rights",
+      "entry_id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117",
+      "sha256": "0457600efb14a779a02482a3759cd70f93c4674d92a79bcbf10dffcc6af12d0b",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-515bc6d7-G-rights.json"
+    },
+    {
+      "id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117-source",
+      "entry_id": "FU-515bc6d7-8b8f-43a4-b358-f29e07525117",
+      "sha256": "938e3d358ffb8fc574ea0b0b01749315c9b6f38f13e776aed3a709959fb8f85e",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-515bc6d7-G-source.zip"
+    },
+    {
+      "id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee-captions",
+      "entry_id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee",
+      "sha256": "b730f8709928c641db47dad51eb8398a25946e9c57b754f3fb6d478c48c9f4b6",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-673265a3-G-captions.srt"
+    },
+    {
+      "id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee-video",
+      "entry_id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee",
+      "sha256": "177033a24092d8931282143cd1d0291f514efa563c16d347e43057e1cc0be0af",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-673265a3-G-pilot.mp4"
+    },
+    {
+      "id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee-rights",
+      "entry_id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee",
+      "sha256": "47ea52b114d901567d719f7a0f6b92b2438be007d0851e12eaef805108165557",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-673265a3-G-rights.json"
+    },
+    {
+      "id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee-source",
+      "entry_id": "FU-673265a3-62ba-4e96-991a-bf5d7ece0bee",
+      "sha256": "8da2a27978c298356ca73d54c88449df693a7efaefa22459256b16d79ac9a90d",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-673265a3-G-source.zip"
+    },
+    {
+      "id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154-captions",
+      "entry_id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154",
+      "sha256": "aea0619cd447ea3139028d9057c0153367b6ae63644d5caaa6f9865f77d8f3d8",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-7174c79b-G-captions.srt"
+    },
+    {
+      "id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154-video",
+      "entry_id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154",
+      "sha256": "041e3c7e4bc85c4d8d20bea84c3538760a9f46d76e6e4e742457e556875d67f2",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-7174c79b-G-pilot.mp4"
+    },
+    {
+      "id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154-rights",
+      "entry_id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154",
+      "sha256": "d691147ef592f9f82ae21473b59436b95149a64bcf00092bfb94cd365e42ce54",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-7174c79b-G-rights.json"
+    },
+    {
+      "id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154-source",
+      "entry_id": "FU-7174c79b-8ef3-4aef-b427-4dba36c7f154",
+      "sha256": "6285f81d04d2478f13c928355c6b73c651ea2d6e46ffcf115fd539cb3beb8d9b",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-7174c79b-G-source.zip"
+    },
+    {
+      "id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6-captions",
+      "entry_id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6",
+      "sha256": "6f8193eb8a0a071e95e371fedc22dc1347fc81fb4e2ea85850a208cf239dd88d",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-eac8bd2e-G-captions.srt"
+    },
+    {
+      "id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6-video",
+      "entry_id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6",
+      "sha256": "3c4e2a305f433d7d4b3fa6ef60f43c86aaaff8d7b9e94395c31cb1477bf07876",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-eac8bd2e-G-pilot.mp4"
+    },
+    {
+      "id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6-rights",
+      "entry_id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6",
+      "sha256": "a6bd30cfc47d09e687da9dff05f3347ef79127bcc4ff2b50567c9c3e1f2f4186",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-eac8bd2e-G-rights.json"
+    },
+    {
+      "id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6-source",
+      "entry_id": "FU-eac8bd2e-f079-4820-b950-765f77d3e8b6",
+      "sha256": "c24f483e3259e4f945bb3b8199028b9f6ef584c483b0cca33595f0dbcdff3369",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-eac8bd2e-G-source.zip"
+    },
+    {
+      "id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8-captions",
+      "entry_id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8",
+      "sha256": "00461d8b5677f0f5cacfff100d9d369ab70b2b4ffafd5158ccef56cbed6797e4",
+      "kind": "captions",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-fa390665-G-captions.srt"
+    },
+    {
+      "id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8-video",
+      "entry_id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8",
+      "sha256": "4ed76fc390e5758d6abade57cc1747f9c37c187a291661862158d43094d489f7",
+      "kind": "video",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-fa390665-G-pilot.mp4"
+    },
+    {
+      "id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8-rights",
+      "entry_id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8",
+      "sha256": "70c8450d7dbd55055397a8c09f158fc7a7cf641abd4a8e55f2709b7b5d41ba81",
+      "kind": "rights",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-fa390665-G-rights.json"
+    },
+    {
+      "id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8-source",
+      "entry_id": "FU-fa390665-bff8-4130-8d14-ca516a4268b8",
+      "sha256": "52a7280b178c1f03f5a01cf57fa7043e2fe35f96037744f8fe271dd43235c1ae",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/review-followups-20261018/FU-fa390665-G-source.zip"
+    },
+    {
+      "id": "FU-f6c7cc8d-d89d-446c-af4d-1d2b3b0eea74-submitted-source",
+      "entry_id": "FU-f6c7cc8d-d89d-446c-af4d-1d2b3b0eea74",
+      "sha256": "6d0076730668f81476ffe8ade814136fc41f51196631094bd9cb80c49c4b90c6",
+      "kind": "source",
+      "url": "https://github.com/Etaing4/joi-workbench-entry/releases/download/followup-fu-f6c7cc8d-20261018/result-FU-f6c7cc8d.zip"
+    }
+  ],
+  "publication_blockers": []
+}

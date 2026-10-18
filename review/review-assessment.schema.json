@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "entry_id": {
+      "type": "string"
+    },
+    "phase_id": {
+      "type": "string"
+    },
+    "track": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ]
+    },
+    "role": {
+      "enum": [
+        "owner",
+        "independent_reviewer"
+      ]
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "verdict": {
+      "enum": [
+        "passed",
+        "failed",
+        "needs_review",
+        "blocked",
+        "not_reviewed"
+      ]
+    },
+    "reviewer": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "model": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "application": {
+          "type": "string"
+        },
+        "identity_provenance": {
+          "enum": [
+            "self_claimed_unverified",
+            "owner_evidence_linked"
+          ]
+        }
+      },
+      "required": [
+        "label",
+        "model",
+        "application",
+        "identity_provenance"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_asset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "packet_source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "id",
+    "entry_id",
+    "phase_id",
+    "track",
+    "role",
+    "reviewed_at",
+    "verdict",
+    "reviewer",
+    "evidence_asset_ids",
+    "rationale",
+    "limitations",
+    "packet_source_sha256"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Returned review assessment (template fields must be completed)"
+}
