@@ -12,7 +12,7 @@ def req(method,path,body=None,data=None,token=None,headers=None,raw=False):
         try:
             with urllib.request.build_opener(urllib.request.ProxyHandler({})).open(urllib.request.Request(BASE+path,data=payload,method=method,headers=hdr),timeout=90) as r:
                 content=r.read();value=content if raw else json.loads(content)
-            with LOCK:REPORT['operations'].append({'method':method,'route':path.split('/')[2] if '/' in path else path,'seconds':time.monotonic()-start,'retries':attempt,'request_bytes':len(payload or b'')})
+            with LOCK:REPORT['operations'].append({'method':method,'route':path.split('/')[1] if '/' in path else path,'seconds':time.monotonic()-start,'retries':attempt,'request_bytes':len(payload or b'')})
             return value
         except urllib.error.HTTPError as e:
             code=e.code;e.close()
