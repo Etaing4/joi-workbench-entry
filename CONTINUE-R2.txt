@@ -1,0 +1,336 @@
+CONTINUATION R2 — finish and return your EXISTING Joi Workbench work; do not start a new benchmark.
+
+If you are still working, finish your current safe step before adopting this message. If stuck,
+resume at the actual blocker; if finished, audit and return the original complete artifacts and
+fill only genuine gaps. Do not interrupt a generation/render or redo completed work merely to
+adopt the repaired return path. The same complete message includes the NEW H supplement below.
+
+LIVE ACCOUNT-FREE ENTRY AND RETURN ROUTES
+• Stable bootstrap (resolve this first, and again on transport failures):
+  https://etaing4.github.io/joi-workbench-entry/v2.json
+• Current browser workspace/editor/upload/checkpoint/hand-in:
+  https://shortly-works-resulted-marriage.trycloudflare.com/
+• Actual coordinator health and protocol/tool/limit/assignment metadata:
+  https://shortly-works-resulted-marriage.trycloudflare.com/health
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/protocol
+• Identical common assignment/assets ZIP:
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/assets/participant-packet.zip
+• Full instructions/API schemas and notes:
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/instructions
+  https://shortly-works-resulted-marriage.trycloudflare.com/openapi.json
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/schemas
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/api-notes
+• Python3.9+ STANDARD-LIBRARY client (no pip/install, GitHub/HF/Google/VPN login or owner config):
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/client.py
+• Minimized public transport progress (no answers/capabilities; not whole-study totals):
+  https://shortly-works-resulted-marriage.trycloudflare.com/v2/progress
+
+Use the browser OR your native tools/HTTP OR the stdlib client. No account provisioning or
+per-entrant credential request to Eng is required. A locally unavailable Python executable is
+not a prerequisite: use the browser/HTTP route instead. The owner manages persistence and worker
+authentication; none of their Google/HF/GitHub credentials belongs in your work or client.
+
+RECOVER BEFORE REGISTERING
+Reuse an existing PRIVATE v2 resume file/capability when available. If adopting an older issue/
+archive-only entry, preserve its EXACT FU UUID/cohort via the existing-ID fields. Do not rewrite,
+normalize or guess a malformed identifier. Existing E01–E10-only/native records are not valid
+FU UUIDs: preserve that original ID in prior_entry_id/history; a transport-generated FU is only
+an internal crosslink, not a new benchmark run or time budget. Keep prior receipts and native
+session/model/application evidence. If registration says409 already registered, restore the
+original private resume/recovery record; do not mint a replacement logical entry. Protect the
+registration idempotency key as a recovery secret. Unknown historical facts stay unknown/null.
+
+OPTIONAL STDLIB BOOTSTRAP (save/run through your ordinary Python tool; browser is equivalent)
+```python
+import hashlib,json,pathlib,urllib.request
+bootstrap='https://etaing4.github.io/joi-workbench-entry/v2.json'
+b=json.load(urllib.request.urlopen(bootstrap,timeout=20)); api=b['api_url'].rstrip('/')
+assert b['protocol_version']=='joi-access-equalized/2'
+p=json.load(urllib.request.urlopen(api+'/v2/protocol',timeout=30))
+client=urllib.request.urlopen(api+'/v2/client.py',timeout=30).read()
+pathlib.Path('client.py').write_bytes(client)
+packet=urllib.request.urlopen(api+p['assets']['url'],timeout=90).read()
+assert hashlib.sha256(packet).hexdigest()==p['assets']['sha256']
+pathlib.Path('participant-packet.zip').write_bytes(packet)
+print('Verified common packet SHA256:',p['assets']['sha256'])
+```
+Extract the owner-supplied common packet into a separate reference directory, inspect its
+contracts/schema before editing, and keep it unchanged. Do not extract someone else's uploaded
+archive over your workspace. Existing common-source contract interfaces remain authoritative.
+
+For CLI register, substitute YOUR actual fields (do not submit these placeholder values):
+```
+python3 client.py --session ../private/workbench-session.json --bootstrap https://etaing4.github.io/joi-workbench-entry/v2.json register --label YOUR_ALIAS --model ACTUAL_MODEL --harness ACTUAL_APP --provider ACTUAL_PROVIDER --entry-id EXISTING_VALID_FU_UUID --cohort EXACT_EXISTING_COHORT --active-seconds ALREADY_SPENT_A_G --adoption-status running --prior-receipt ACTUAL_PRIOR_RECEIPT_URL
+```
+Use adoption-status stuck or completed when true. Add --prior-entry-id ORIGINAL_ID to crosslink
+an older identity. Omit --entry-id only when no FU has ever been assigned; record that condition
+instead of fabricating one. If the original cohort is unknown, label it unknown in provenance;
+do not pretend default transport cohort retroactively replaced it. Never use --qa for real work.
+Browser: restore private record, or enter existing FU/cohort and prior receipts in registration;
+leave QA unchecked for genuine work. Export your PRIVATE resume record outside output/.
+
+Do not restart, interrupt ongoing work, reset any clock, change native identity, discard
+outputs or invent historical checkpoints. Finish your current safe step first. This is
+account-neutral artifact transport and common-tools access for the SAME logical entry.
+Keep the exact original FU ID, cohort, native model/application/session, prior event/issue
+URLs, completed artifacts and already-spent active seconds. Imported identity/history are
+self-reported until independently reconciled. A server receipt observes NOW; it cannot
+retroactively prove a local v1 checkpoint time. Do not redo A's first five minutes or wait
+for a new update if already completed. Preserve original bytes and separately label repairs
+or supplemental access-enabled work. Already complete: check actual completeness and return
+existing work; fill genuine gaps only. Stuck: resume remaining work. Running: adopt at the
+next safe checkpoint. Native turn/session endings are not 120-minute cap exhaustion.
+
+Original A–G use ONE shared 120-minute active-work allowance, including A's first five
+minutes. Preserve time spent; exclude transport/setup/queue defects and record them
+separately. No fresh 120 minutes on registration. Use checkpoints at useful artifacts and
+15/30/60/90 active minutes; hand in partial/blocked/not_attempted rows at cap. Self-timing is
+not independently observable thinking time. Open protocol exposes the common update; this
+is not blinded release or equalized native vendor tooling, and no result is pooled into
+frozen E01–E10/70 cells. Keep original histories unchanged.
+
+## Assignment and paths (all source contracts included)
+
+A: temporal operations continuity, exact initial/final state/handoff. Read phase1/CONTRACT.md,
+packet/ABCD/CONTRACT.md and SOURCE_PACKET.md. Keep A/initial.json immutable, A/final.json,
+submission.py and result.json. For a new, not-yet-done A checkpoint only: upload the real
+A/initial.json, then event initial_checkpoint with its actual initial_sha256. For an existing
+checkpoint: import exact original file/history at next safe point, clearly timestamp-unverified;
+never pretend receipt time is original time. packet/update_receipt.json is the existing
+common update, not a reason to redo initial work.
+
+B: exact release visibility, bounded additive repair, source diagnosis and preservation;
+read packet/ABCD/CONTRACT.md and SOURCE_PACKET.md; B/research.json + submission.py/result.json.
+C: pure OFFLINE Windows helper and apply/rollback receipt semantics; never run real AEGIS.
+D: synthetic account-aware/version-aware document reconciliation, exact evidence/conflicts;
+read packet/ABCD/fixtures.json. A–D supplied synthetic evidence only, strictly offline.
+E: isolated command-center QA; packet/contracts/TRACK_E.md and command-center/README.md.
+E/REPORT.md, >=4 NEW tests across >=3 acceptance surfaces in E/tests/, E/TEST_RESULTS.json
+with actual checks/mutation evidence, optional E/patch.diff. No production/native bridge.
+F: packet/contracts/TRACK_F.md: actual reusable economic-value kit, worked synthetic sample,
+stdlib calculator, self-contained landing, research/rights/assumption evidence under
+F/baseline/. Modeled value is NOT earned revenue. All exact interface/schema requirements apply.
+G: packet/contracts/TRACK_G.md: ACTUAL original 120±2s >=720p H264/AAC/mov_text film,
+G/baseline/pilot.mp4, narration.txt/wav, captions.srt, render.py, REPRODUCE.md, publication_plan,
+source assets, rights, measurement log, creative submission.json. Script-only is missing G.
+Full-file listening/rights/audience appeal remain independent review, never metadata acceptance.
+
+## Track H — NEW supplemental one-minute generative video, NOT replacement G
+
+Read packet/contracts/TRACK_H.md and packet/common/H-RESOURCE-OFFER.md in full. Make an actual audience-ready ~60s AI-generated
+finished H264/AAC video for a potentially watchable, repeatable faceless channel. Portrait
+9:16 preferred unless justified. Intentional direction, continuity, convincing visuals,
+pacing/editing/sound; expressive natural voice/dialogue where used. Stylized animation is
+valid; code shapes/slideshow/robotic TTS alone do not meet this generative creative brief.
+Original cats conversing, adult non-explicit performance, anime-inspired history or cinematic
+work are optional directions, not required templates. No protected character/footage reuse,
+deceptive real-person impersonation, fake endorsements or unconsented voice cloning.
+
+H has an independently reported production clock/cost, never retroactively charged against
+A–G. The common H active-production allowance is 60 minutes, separately timed; record setup/queue/render/wall time separately. ANY authorized generative
+video/image/voice/music/editor/research tools may be used for H. These production models are
+explicitly allowed for H, unlike A–G's no-secondary-solver/delegate rule. Disclose your actual
+orchestration role and every tool/model, prompts/workflows, assets/rights and real execution
+receipts. No new subscriptions, auto-recharge, unapproved charges or owner credentials.
+Use common account-free provided tools and already-authorized native tools; disclose actual
+access/credits/failures. CPU FFmpeg/eSpeak is NOT itself access to generative video. If no
+qualified access, record exact blockers and attempted alternatives; do not fabricate a film
+or make Eng coordinate individual accounts. Offer the SAME documented Higgsfield resource
+opportunity (Eng's Codex signup is a lead, not a cross-client login/credit guarantee), plus
+allowed alternatives. Record offered → plugin/adapter discovered → authenticated → quoted →
+submitted → output retrieved separately, with real receipts/unknowns. Do not export tokens or
+assume OAuth portability. An access failure is a valid H orchestration finding, NOT grounds
+to hold the whole continuation/return pipeline for universal Higgsfield access. A central
+owner-authorized gateway is offered only if independently qualified. Native-only access is
+labeled honestly; no new subscriptions/charges. H creativity remains unknown if no real film.
+
+H/pilot.mp4; captions if speech; clean master and appropriate audio; H/README.md (concept,
+audience, series, hook, distribution, why watch); H/research.json (real published examples,
+URLs/dates and only actually visible metrics); H/tool-ledger.json (models/versions, access,
+inputs/prompts/workflows, shot/voice/music source provenance, actual cost/usage or unknown);
+H/source/ reproduction/edit assets; H/self-review.md (actual flaws/checks). Eng judges ALL
+H films. No automatic appeal/rights/monetization/aesthetic acceptance.
+
+## Safe common execution and research
+
+The coordinator NEVER executes uploads. Jobs queue to a separately qualified credential-free,
+network-disabled, resource-bounded sandbox; no host/fleet/shared-service access. Submit argv as
+an array, timeout<=600s, and explicit safe output paths. Snapshot input files are immutable.
+Download outputs to iterate. Queue execution time is separately reported, not model active time.
+A stalled/expired lease is quarantined pending stopped-container reconciliation, not blindly
+rerun. Tool image/version receipts establish actual capabilities, not a listed-tool claim.
+Common tool/bootstrap docs are served with /v2/protocol. No new paid resources. A–G no second
+models, delegates, peer outputs or gold. F/G/H public research is allowed; GET /v2/research
+with own capability and X-Attempt-ID uses bounded public HTTPS with pinned safe addresses;
+not a paid search/model proxy. Native public research is also allowed and must be recorded.
+
+## Account-free return — browser or Python standard library
+
+No entrant GitHub, HF, VPN or owner account. Browser at coordinator /: register/adopt logical
+entry, save a PRIVATE resume JSON, edit files, upload original relative paths, queue execution,
+view own jobs/files, checkpoint, mechanical completeness and immutable partial/final hand-in.
+Never share resume JSON/capability or put it inside your output bundle. Browser local storage
+is origin-specific/shared-device-sensitive; export privately, reopen through stable bootstrap
+and restore when tunnel changes. Capability is an Authorization header, never a public URL.
+
+CLI download /v2/client.py, Python3.9+ stdlib (no pip). Set the owner-published stable HTTPS
+bootstrap URL via --bootstrap; it is re-resolved on every operation/retry. Do not copy an owner
+secret or accept per-app credentials. Example command shapes (substitute REAL existing fields):
+
+python3 client.py --session ../private/workbench-session.json --bootstrap https://etaing4.github.io/joi-workbench-entry/v2.json register --label PUBLIC_ALIAS --model ACTUAL_MODEL --harness ACTUAL_APP --provider ACTUAL_PROVIDER --entry-id EXISTING_FU_ID --cohort EXISTING_COHORT --active-seconds ALREADY_SPENT --adoption-status running
+python3 client.py --session ../private/workbench-session.json push --root ./output
+python3 client.py --session ../private/workbench-session.json completeness
+python3 client.py --session ../private/workbench-session.json job --json ../private/job-request.json
+python3 client.py --session ../private/workbench-session.json event --json ../private/event-request.json
+python3 client.py --session ../private/workbench-session.json submit --json ../private/submit-request.json
+
+Request schemas/examples: /v2/protocol and /openapi.json. Keep idempotency_key unchanged on
+identical retries; changed payload needs a NEW key (409 is a conflict, never overwrite).
+Large files automatically use4MiB chunks; restart uses received chunk inventory; whole-file
+hash/readback verifies exact bytes. Direct8MiB, file256MiB, retained per-entry512MiB/global4GiB;
+chunk sessions reserve both chunks+assembled object. Incomplete reservations count. Quotas,
+service/tool failures and missing artifacts remain visible limitations, not invented success.
+
+## Root manifest is NOT transport metadata; hand-in is NOT acceptance
+
+output/submission.json is the ACTUAL common benchmark root from
+packet/common/submission.schema.json with exact FU ID, A–G tracks, identity, artifact_manifest,
+limitations and JOI_WORKBENCH_V1:<FU-ID>:SUBMITTED marker. H is a separate supplemental manifest/
+transport row so original A–G schema and historical hashes stay intact. Creative F/G nested
+submission.json are distinct. result.json + code/media/source must all be uploaded. Never
+replace root with joi-portable-entry/1 metadata, or rename original artifacts to
+artifacts/0-submission.py. Transport resume/request JSON stays OUTSIDE benchmark outputs.
+Structural selfcheck is not independent scoring; file presence or successful ZIP export does
+not mean root/E/F/G/H accepted. No reviewer-authored replacement artifacts fill entrant gaps.
+
+Submit request has all A–G plus optional H track_states; active_seconds; limitations;
+finalized true for finished hand-in, false for partial checkpoint; supplemental_h independent
+clock/cost/tool facts; supplemental_access_work labels; publish_review consent. Immutable
+receipt pins exact versions and queues trusted technical checks plus pending independent
+review. All rows retain required/present/verified/missing/blocked/not_attempted distinctions.
+Record unknown costs, backend identity, rights, speech/listening as unknown/null, not zero/pass.
+
+Progress is minimized: IDs/cohorts/states/queue/review summaries, not answers or capabilities.
+After finalized consented hand-in, owner allowlists an immutable public reviewer packet with
+read-only source/video/evidence links (no login/Tailnet), separate G and H, exact versions,
+completeness and uncertainties. Active latest work never becomes public by uploading. Raw
+private findings/hidden graders are NOT automatically published. Public benchmark consent
+does not authorize unrelated secrets/private records. Runtime requires coordinator machine,
+tunnel and runner live; private task-owned durable storage is off-machine but NOT an uptime guarantee.
+Preserve/return work during outages; do not restart or invent receipts. This continuation
+was not an instruction to inspect other entrants' answers or overwrite your original files.
+
+## Speed, instruction delivery R1/R2 and cumulative scope
+
+R1 is the ORIGINAL instruction delivery; R2 is this full continuation INCLUDING H. They are
+NOT new benchmark attempts and NOT Track A initial/final or old runner phase1/phase2. Keep
+the SAME FU/cohort/native identity and original A–G active clock, plus a separate H clock.
+For each round retain exact prompt receipt/hash/provenance, instruction receipt/start/stop,
+completed/missing work at stop, and the between-round waiting gap (null if unmeasured).
+At R2 safe adoption record the actual boundary; if still running, state overlap explicitly
+and do not sum overlapping intervals twice. For every resumed section record local start,
+first artifact, delivery, verification, elapsed and new-work vs rework. No ZIP timestamp
+backdating. A three-minute R1 self-reported PARTIAL is not whole-benchmark completion.
+
+Use optional event `round: "R1"|"R2"` and `round_timing` with literal `prompt_sha256` (actual
+accepted prompt hash, or null if unknown), `instruction_received_at`, `prompt_receipt_url`,
+`source`, `work_stopped_at`, `between_round_wait_seconds`, `safe_adoption_boundary`, `scope`,
+and `section_timings` per A–H. Save exact requests outside outputs and keep keys on retries.
+Round prompt hashes are immutable once supplied. Server `first_server_observed_at` proves
+observation NOW, not the claimed historical receipt. `active_seconds` remains cumulative
+original A–G, not per-round reset. Report H in `supplemental_h`, not added retroactively.
+
+Record instruction receipt/work start with source/skew caveats; active/wall/tool/render/
+queue/setup/auth/transport/download/retry/recovery time separately, unknowns null. Events
+may include optional `timing` claims; artifact/submission receipts and real job durations
+are separately observed. Do not subtract guessed waits. First file presence is not first
+useful artifact, claimed_done is not artifacts_received/completeness_verified/technical
+review, and Eng H judgment remains separate. Time-to-verified-pass is unknown until a
+specific immutable version actually passes appropriate independent checks; pending entries
+have duration-to-date/blocked/queued status, not zero finish time or a fast-win label.
+Compare same scope/resources/completeness with coverage, not unsupported model rankings.
+
+
+EXACT JOB / CHECKPOINT / HAND-IN EXAMPLES — private request files stay OUTSIDE output/
+
+Run your own source through the common sandbox rather than on a credential-bearing host.
+For a simple uploaded main.py, save a private job request with a new random idempotency_key:
+{"idempotency_key":"SAVE_A_RANDOM_UUID_HERE","argv":["python3","main.py"],"timeout_seconds":600,"outputs":["result.json"]}
+Then use `python3 client.py --session ../private/workbench-session.json job --json ../private/job-request.json`
+and `python3 client.py --session ../private/workbench-session.json job-status EXACT_RETURNED_JOB_ID`.
+Change argv/outputs to your actual command and required output paths; do not claim unexecuted
+commands passed. Common sandbox has Python3.14.7, pytest, NumPy/Pillow, installed Chromium/
+Playwright, FFmpeg and eSpeak; the actual immutable runner receipt/tool versions are authoritative.
+It has2CPU/4GiB RAM, no network, read-only system image, bounded scratch/outputs, no model/provider
+keys. Public research uses the separate safe HTTPS route or authorized native research. Jobs are
+serial FIFO; no anti-monopoly/round-robin or exactly-once execution guarantee is claimed. Do not
+flood the queue. Wait for one job to complete before queuing another for the same entry. Unknown
+or quarantined leases require owner reconciliation, not blind reruns or fabricated success.
+
+Checkpoint: save a request with a stable random key, kind checkpoint, current cumulative A–G
+active_seconds, actual A–H states, message, round:"R2", and timing claims/provenance as documented.
+State vocabulary: not_attempted, in_progress, blocked, partial, complete, failed. Reuse the same
+request bytes/key on identical retry; a changed payload needs a new key. Historical R1 snapshots
+must remain labeled historical/self-reported, not newly server-verified. Record the exact R2
+message hash from its delivery receipt if supplied, otherwise null until independently reconciled.
+For each section retain started_at/first artifact/delivered_at/verified_at, new work vs rework,
+source/provenance and unknown timestamps as null. Do not invent R2 receipt times or reset R1 work.
+
+Upload the CONTENTS of your original output tree, preserving relative paths:
+`python3 client.py --session ../private/workbench-session.json push --root ./output`
+Then inspect `... completeness`, repair only actual missing/wrong artifacts within remaining
+budget, and verify own file downloads. Browser directory upload strips the chosen root folder;
+check that the common root is submission.json, not output/submission.json on the server.
+Do NOT upload private resume files, account secrets, unrelated records, native history transcripts,
+private host paths, peer answers, hidden graders/gold or owner configuration.
+
+An actual final/partial hand-in request contains:
+{"idempotency_key":"SAVE_A_NEW_RANDOM_UUID_HERE","track_states":{"A":"partial","B":"not_attempted","C":"not_attempted","D":"not_attempted","E":"not_attempted","F":"not_attempted","G":"not_attempted","H":"not_attempted"},"active_seconds":0,"limitations":["REPLACE WITH ACTUAL LIMITATIONS"],"finalized":false,"publish_review":false,"supplemental_h":{"active_seconds":0,"cost_usd":null},"supplemental_access_work":null}
+REPLACE every state, active_seconds, limitation and H timing with your actual facts. The zeros
+are example syntax, not an instruction to erase time; H unknown cost is null, not free. Use
+finalized:true when making your finished hand-in, even if some tracks are honestly partial/
+blocked; use false for an interim checkpoint. Choose publish_review:true only for consented
+finalized artifact publication, after removing unrelated private data; otherwise keep false.
+Run `python3 client.py --session ../private/workbench-session.json submit --json ../private/submit-request.json`.
+Browser equivalent: actual states/clocks/limitations, partial/final choice and publication consent,
+then Hand in. Save the immutable submission receipt URL, exact file/version hashes, grade_job_id,
+missing/blocked list and PRIVATE resume file. Technical checks queue automatically; self-report,
+file presence, a transport receipt or a successful grade JOB is not benchmark acceptance.
+
+HTTP equivalents use Authorization: Bearer <YOUR_PRIVATE_CAPABILITY> on own routes:
+POST /v2/attempts/{FU}/events; PUT /v2/attempts/{FU}/files/{original_path}; GET same file with
+optional ?version=R-UUID; POST /v2/attempts/{FU}/uploads and fixed4MiB chunks/inventory/complete;
+POST /v2/attempts/{FU}/jobs; GET /v2/attempts/{FU}/jobs/{JID}; GET .../completeness; POST .../submit.
+GET /v2/receipts/{RID} is the minimized public immutable receipt. Never put capabilities in URLs.
+Identical durable retries retain the same key and bytes;409 means conflict, not overwrite.
+
+AVAILABILITY / RETRIES / REVIEW
+Durable ACK means off-machine private storage plus exact readback, not local disk. The current
+coordinator/isolated worker and temporary tunnel depend on the owner machine remaining available;
+this is a bounded pilot, not a permanent uptime/SLA promise. Google Testing authorization may
+need owner renewal aroundOct21. You never need Google/HF/GitHub accounts to participate.
+The server admits a bounded number of mutations;429 with Retry-After can mean APPLICATION
+admission, not provider failure or your performance. Honor Retry-After and retry the SAME saved
+request/key. Updated browser/stdlib clients perform20bounded attempts, honoring Retry-After with jittered2..10s backoff. Under the measured12-client load, successful resumed HTTP roundtrips including retry wait had median12.2s, p95≈105.9s and maximum≈211.7s. These are transport/queue costs, not model active work or a speed SLA; preserve exact keys and work if a bounded retry window expires. If still unavailable, save
+work/resume state, record actual setup/queue/transport/retry delay separately, and resume after
+rechecking the stable bootstrap.503 or a timeout is NOT an ACK; reconcile by same-key retry and
+exact inventory/receipt readback before assuming success. Do not restart completed benchmark work.
+
+Private Findings receive only minimized pending transport summaries; QA is excluded and baseline
+10routes/70cells stay frozen. Existing old/public entry IDs are not silently pooled as new models.
+After finalization/consent and owner privacy/provenance allowlisting, your exact immutable review
+packet is published at /v2/reviews/{FU}/{SUBMISSION_RECEIPT_ID}/manifest with separate original
+G120s and supplemental H60s source/video/captions/rights. This route is public only after explicit
+publication, so a pending404 is not a missing private hand-in. No hidden graders or raw private
+findings are automatically exposed. Independent reviewers assess actual artifacts; Eng personally
+judges every supplied H film. Their future judgments and unfinished entrant work are NOT barriers
+to using this repaired pipeline now. Do not read peer solutions while still solving A–G.
+
+Reply in THIS existing chat with: original ID/FU/cohort + native model/application/session facts;
+actual R1/R2 receipt/adoption/timing provenance; cumulative A–G active time and independent H time;
+per-track required/present/verified/missing/blocked/not_attempted; exact returned artifact hashes,
+submission receipt and unresolved access/quality limits. Keep PRIVATE capability/resume data out
+of that public-facing summary. If your app cannot use the browser/HTTP/stdlib return path, return
+actual original files/accessible artifact URLs in this same chat, state the exact transport
+blocker and preserve the same logical entry/history. A fallback relay is an explicit exception,
+not a claim of automated receipt or instruction for Eng to provision individual accounts.
