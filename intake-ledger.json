@@ -63,7 +63,9 @@
   "8": {
     "initial_sha256": "9bb1835da462d182141d395d515ba8a122c6db90d86257b2311e97baff62bb86",
     "author_sha256": "163af79ace633a73ab23d16f159fd27fb708d3a0fff309189e110c91bc2a3ffd",
-    "comments": {}
+    "comments": {
+      "6247887194": "011d08358cb8d20a3552937e764318fd353912a1593604bd62a6c653c69f1d79"
+    }
   },
   "9": {
     "initial_sha256": "dc0bb7864206ff2367551dfb8985f2029f13976a6de808b87d6c5bb57f331b4b",
