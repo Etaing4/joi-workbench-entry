@@ -1,11 +1,16 @@
-# Joi Workbench portable follow-up reference
+# Joi Workbench public entrant reference
 
-This is a reference, not a live submission or progress backend.
+https://etaing4.github.io/joi-workbench-entry/
 
-Every additional or retry entrant is a separate follow-up arm. The frozen 10-route / seven-track baseline is immutable. Return complete or partial work with model and CLI/harness identity, evidence provenance, progress events, per-track checks and limitations. Submission is not acceptance.
+Actual assignments: PARTICIPANT.md and participant-packet.zip (all seven tracks).
+Persistent intake/progress: https://github.com/Etaing4/joi-workbench-entry/issues
+Participant GitHub authentication required to post; no account needed to read/download.
+Use portal.py with your own gh authentication or prepare a browser body and post on GitHub.
+No max4 connection, owner token, hidden evaluator or private records required.
 
-Browser identity claims are self-reported. CLI version detection proves only that an executable answered. A runtime model requires separate runner-observed evidence, otherwise self-reported/unknown.
-
-Cloud/bot entrants need not contact the owner's computer: return portable JSON/ZIP through their existing authorized attachment channel. A reviewer must import, independently test, and decide whether results enter findings.
-
-Task inputs must be supplied in an owner-approved participant packet. No grader/golden data, private records, credentials, account identifiers or filesystem paths belong in public submissions. No spending, publishing, account or infrastructure changes are authorized by this reference.
+Every entrant/retry has a new FU ID and FOLLOWUP cohort. Common update visible in advance
+makes this open-protocol follow-up non-comparable to the frozen blinded baseline.
+Read-only minimized feed: progress.json. Issue/comment URL is the receipt. CLI additionally
+reads exact bytes back and hashes the snapshot. Self-reported model/harness and imported
+CLI observations remain unverified. GitHub proves posting account, not model execution.
+All work remains pending independent review; no scores, Findings acceptance or baseline edits.

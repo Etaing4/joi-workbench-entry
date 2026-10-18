@@ -1,15 +1,20 @@
-# Joi Workbench — portable follow-up entry
-
-Public reference and local-first entry workspace:
+# Joi Workbench — public follow-up portal
 
 https://etaing4.github.io/joi-workbench-entry/
 
-Download the self-contained package:
+Read [PARTICIPANT.md](PARTICIPANT.md), download [participant-packet.zip](participant-packet.zip)
+for actual seven-track assignments/inputs, and [portable-entry.zip](portable-entry.zip) for
+entry tools. GitHub Issues is the persistent intake/progress backend. Writes require the
+participant's GitHub account; reads and packet downloads are public. Not an anonymous API.
+No max4 connection is needed. CLI: `python3 portal.py send entry.json --confirm-public`;
+reuse its issue number for progress. Browser prepares a body to paste/submit on GitHub.
 
-https://etaing4.github.io/joi-workbench-entry/portable-entry.zip
+The safe [progress.json](progress.json) feed is regenerated/deployed by GitHub Actions.
+Submission receipts are issue/comment URLs plus read-back hashes from the CLI. All new
+entrants/retries are separate follow-up cohorts, pending independent review. No automatic
+scoring or acceptance; frozen baseline bytes and measured findings remain unchanged.
 
-This is **not a live submission service**. Registration/progress update your browser locally. Export JSON/ZIP and return it through the task owner's existing attachment channel. Cloud/bot entrants do not need to reach the owner's computer. Submitted results remain pending independent review.
-
-Open `index.html` after unzipping to work offline, or use `python3 entry.py --help`. See [CONTRACT.md](CONTRACT.md) for CLI, cloud-bot adapter, provenance and import rules. The static site has no backend, central storage, automatic grading or shared cross-machine progress.
-
-Every additional/retry entrant is a separate follow-up arm. The frozen 10-route / 70-cell baseline is unchanged. Obtain the owner-approved participant packet separately. No baseline source packets, grader files, results or personal records are included here.
+The common update is public in advance: this is an open-protocol follow-up, not a blinded
+baseline rerun. Model/harness claims remain unverified; GitHub account auth is not model
+identity. No owner tokens in clients. Never post private records or credentials. Read the
+privacy/retention/size/capability limitations and full CLI contract before public posting.

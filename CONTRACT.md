@@ -2,9 +2,9 @@
 
 ## What is live, and what is not
 
-The public page is static. Its registration, progress list, readiness marker, browser auto-save and same-origin tab refresh work locally. Nothing is submitted, shared across computers, scored, or accepted automatically. Return the downloaded JSON/ZIP using the task owner's existing attachment channel. No max4 connection is required. A reviewer imports it and runs independent checks before any findings are changed.
+The page keeps local working records. A separate GitHub Issues intake now persists submitted records and progress remotely: prepare the body, then post it on GitHub, or use portal.py with your own authenticated gh CLI. GitHub sign-in is REQUIRED for writes; this is not anonymous/bot-universal intake. Receipt is the actual issue/comment URL after submission. No max4 connection is required. Safe progress feed is progress.json; a reviewer independently checks pending work before any Findings changes.
 
-A participant must obtain the owner-approved task packet separately. This package intentionally excludes baseline source packets, golden answers, grading materials, personal records and all credentials. A reference is not the full study assignment.
+The actual sanitized participant inputs and all A–G assignments are in participant-packet.zip. Read PARTICIPANT.md first: this open-protocol follow-up exposes the common update in advance and is not baseline comparable. Golden answers, hidden grading sources, personal records and credentials remain excluded.
 
 ## Quick start (Python 3.9+ standard library)
 
@@ -49,8 +49,8 @@ python3 entry.py import result.zip --inbox reviewer-inbox
 * All A–G tracks: state, summary, checks (command and actual observed result), relative artifact references and limitations. No commands are executed.
 * Append-only `events`: consecutive one-based sequence, timestamp (untrusted producer clock), kind started/checkpoint/blocked/artifact/submitted, nullable track, message and self_reported provenance. The producer preserves earlier events unchanged.
 * ZIP root: `manifest.json`, `submission.json`, and exactly the declared `artifacts/...` members. Manifest includes version, exact member paths, byte counts and SHA-256. No undeclared or duplicate members, traversal, absolute/backslash paths, symlinks, encrypted members, high compression ratios or oversized files.
-* Do not put private filesystem paths, secrets, account information or personal records in messages, commands, labels or artifacts. This tool cannot automatically determine whether chosen artifact content is safe. Review before sharing. The public UI never uploads it.
+* Do not put private filesystem paths, secrets, account information or personal records in messages, commands, labels or artifacts. This tool cannot automatically determine whether chosen artifact content is safe. Review before sharing. The UI prepares a public issue/comment body only after an explicit benchmark-only consent checkbox. GitHub posting is a separate signed-in action; the CLI requires --confirm-public. Review all content before that action.
 
 ## Deployment boundary / remaining integration
 
-GitHub Pages can host this safe static package under an existing authorized account. It cannot run a database, accept POST submissions or provide cross-machine live progress. A real shared live service still needs an approved backend resource, authentication/abuse controls, retention rules, public-data consent and reviewer integration. No such backend is implied or silently provisioned here. Frozen baseline and findings remain outside this package.
+GitHub Pages itself still cannot accept POST. The owned Etaing4/joi-workbench-entry repository has Issues enabled as the authenticated persistent backend. portal.py publishes full metadata snapshots as issues/author comments and reads each write back exactly. GitHub Actions generates a minimized pending-only progress.json and deploys Pages independently of max4. Raw issues/attachments are public; account auth is not model proof. No client owner token, auto-execution, automatic score or acceptance. See PARTICIPANT.md for transport, privacy, size limits and evidence levels. The private Findings adapter is an explicit separate handoff, not a claim the private dashboard is already wired.
