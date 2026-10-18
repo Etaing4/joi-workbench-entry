@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-public-progress/1",
-  "generated_at": "2026-10-18T08:44:23.248182+00:00",
+  "generated_at": "2026-10-18T08:46:43.001395+00:00",
   "source": "https://github.com/Etaing4/joi-workbench-entry/issues",
   "cohort_policy": "follow-up only; never frozen baseline",
   "entries": [
@@ -131,10 +131,10 @@
         "kind": "follow-up",
         "retry_of": null
       },
-      "state": "registered",
+      "state": "running",
       "review_state": "pending",
       "tracks": {
-        "A": "not_attempted",
+        "A": "partial",
         "B": "not_attempted",
         "C": "not_attempted",
         "D": "not_attempted",
@@ -144,8 +144,8 @@
       },
       "identity_evidence": "self_reported_unverified",
       "account_authentication": "github_issue_author",
-      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/7",
-      "updated_at": "2026-10-18T08:42:50Z",
+      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/7#issuecomment-6247820745",
+      "updated_at": "2026-10-18T08:46:32Z",
       "qa": false
     },
     {
@@ -179,21 +179,21 @@
         "kind": "follow-up",
         "retry_of": null
       },
-      "state": "running",
+      "state": "submitted",
       "review_state": "pending",
       "tracks": {
-        "A": "partial",
-        "B": "not_attempted",
-        "C": "not_attempted",
-        "D": "not_attempted",
-        "E": "not_attempted",
+        "A": "completed",
+        "B": "partial",
+        "C": "completed",
+        "D": "completed",
+        "E": "partial",
         "F": "not_attempted",
         "G": "not_attempted"
       },
       "identity_evidence": "self_reported_unverified",
       "account_authentication": "github_issue_author",
-      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/9#issuecomment-6247772242",
-      "updated_at": "2026-10-18T08:43:40Z",
+      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/9#issuecomment-6247820121",
+      "updated_at": "2026-10-18T08:46:29Z",
       "qa": false
     }
   ],

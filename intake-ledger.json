@@ -56,7 +56,9 @@
   "7": {
     "initial_sha256": "40ceb4bf1f81b5cb9ef3d89a08bc956a1c3410cb5693a460841f4402567e14cd",
     "author_sha256": "163af79ace633a73ab23d16f159fd27fb708d3a0fff309189e110c91bc2a3ffd",
-    "comments": {}
+    "comments": {
+      "6247820745": "f15287abd292e17a87c3be65d06ad4a7b76b285d63321a48055095e6ef4c91c5"
+    }
   },
   "8": {
     "initial_sha256": "9bb1835da462d182141d395d515ba8a122c6db90d86257b2311e97baff62bb86",
@@ -67,7 +69,8 @@
     "initial_sha256": "dc0bb7864206ff2367551dfb8985f2029f13976a6de808b87d6c5bb57f331b4b",
     "author_sha256": "163af79ace633a73ab23d16f159fd27fb708d3a0fff309189e110c91bc2a3ffd",
     "comments": {
-      "6247772242": "09e4a4632c1ace88c6ea72eaf6c7d1fd0c1f855bfabde39a4be7671f34227b97"
+      "6247772242": "09e4a4632c1ace88c6ea72eaf6c7d1fd0c1f855bfabde39a4be7671f34227b97",
+      "6247820121": "9bb9a6ab28415f4f388fbb19fa306ea0a593aa77ff0e98f2889da8462c772015"
     }
   }
 }
