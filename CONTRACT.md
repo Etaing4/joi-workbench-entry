@@ -23,7 +23,7 @@ python3 entry.py export entry.json --output result.zip --artifact answer.txt
 python3 entry.py validate result.zip
 ```
 
-`--artifact` can be repeated for explicitly chosen files. Export reads only those named files. ZIP attachments are opaque untrusted bytes, never executed by the tool. JSON alone transports metadata and must not claim bundled artifact payloads. Files over 128 MiB / total 256 MiB exceed v1 limits; use an owner-approved external attachment transport for larger media and record the limitation. Existing ZIP targets are never overwritten. Protect your working JSON and retain exports as immutable checkpoints.
+`--artifact` can be repeated for explicitly chosen files. Export reads only those named files. ZIP attachments are opaque untrusted bytes, never executed by the tool. JSON alone transports metadata and must not claim bundled artifact payloads. Files over 128 MiB / total 256 MiB exceed v1 limits; use an owner-approved external attachment transport for larger media and record the limitation. Existing ZIP targets are never overwritten. Protect your working JSON and retain exports as immutable checkpoints. `event` and `track` accept only working `.json` records and refuse ZIP inputs. Track summaries/state are current projections that can be revised by appending a new progress event; they are not independently authenticated immutable test evidence. Import archives every received snapshot. A same-event-history change to tracks/state/limitations is rejected. Identity/cohort and existing event prefixes cannot be revised through import.
 
 ## Cloud / bot adapter
 

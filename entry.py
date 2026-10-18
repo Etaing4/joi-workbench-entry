@@ -41,12 +41,20 @@ def validate(d):
             x=d['identity'][k]
             if not isinstance(x['value'],str) or len(x['value'])>1000 or x['provenance'] not in {'self_reported','unknown'}:raise ValueError('invalid identity claim')
         for cli in d['identity']['installed_cli']:
-            if cli['provenance'] not in {'observed_executable','unknown'}:raise ValueError('invalid CLI provenance')
+            if cli['provenance'] not in {'observed_executable','unknown'} or not all(isinstance(cli[k],str) and len(cli[k])<=1000 for k in ['name','version','scope']):raise ValueError('invalid CLI provenance/record')
         if not isinstance(d['label'],str) or len(d['label'])>200:raise ValueError('invalid label')
         for track in d['tracks'].values():
             if track['state'] not in TRACK_STATES or not isinstance(track['summary'],str) or len(track['summary'])>10000:raise ValueError('invalid track')
             for key in ['checks','artifacts','limitations']:
-                if not isinstance(track[key],list):raise ValueError('invalid track list')
+                if not isinstance(track[key],list) or len(track[key])>500:raise ValueError('invalid track list')
+            for check in track['checks']:
+                if check.get('provenance')!='self_reported' or not all(isinstance(check[k],str) and len(check[k])<=10000 for k in ['command','observed_result']):raise ValueError('invalid check claim')
+            for name in track['artifacts']:
+                if not isinstance(name,str):raise ValueError('invalid relative artifact')
+                safe_name(name)
+            for limitation in track['limitations']:
+                if not isinstance(limitation,str) or len(limitation)>4000:raise ValueError('invalid limitation')
+        if not isinstance(d['limitations'],list) or any(not isinstance(x,str) or len(x)>4000 for x in d['limitations']):raise ValueError('invalid limitations')
         if not isinstance(d['events'],list) or len(d['events'])>5000:raise ValueError('event limit')
         for i,event in enumerate(d['events'],1):
             if event['seq']!=i or event['kind'] not in EVENT_KINDS or event['track'] not in [None,*'ABCDEFG'] or event['provenance']!='self_reported':raise ValueError('invalid event')
@@ -158,6 +166,7 @@ def import_bundle(path, inbox):
         old_events=old['events']; new_events=d['events']
         n=min(len(old_events),len(new_events))
         if old_events[:n]!=new_events[:n]:raise ValueError('event history conflict')
+        if len(old_events)==len(new_events) and any(old[k]!=d[k] for k in ['tracks','state','limitations']):raise ValueError('result revision requires an appended event')
     with snapshot.open('xb') as f:f.write(canonical(d))
     source=entry/(h+('.zip' if Path(path).suffix.lower()=='.zip' else '.source'))
     with source.open('xb') as f:f.write(raw)
@@ -205,6 +214,7 @@ def main(argv=None):
             d=validate(parse_json(match.group(1) if match else text)); write_json(args.output,d,True)
             result={'entry_id':d['entry_id'],'adapter':args.source,'source_sha256':digest(text),'identity_authority':'unverified_imported_claims'}
         elif args.command in {'event','track','export'}:
+            if args.command in {'event','track'} and Path(args.entry).suffix.lower()!='.json':raise ValueError('mutating commands require a plain .json working record, never a ZIP')
             d=load_bundle(args.entry)
             if args.command=='event':d=append_event(d,args.kind,args.track,args.message); write_json(args.entry,d); result=d
             elif args.command=='track':
