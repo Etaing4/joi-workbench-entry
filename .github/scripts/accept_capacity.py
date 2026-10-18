@@ -8,21 +8,27 @@ def req(method,path,body=None,data=None,token=None,headers=None,raw=False):
     hdr={'Content-Type':'application/json' if body is not None else 'application/octet-stream',**(headers or {})}
     if token:hdr['Authorization']='Bearer '+token
     start=time.monotonic()
-    for attempt in range(4):
+    for attempt in range(20):
+        retry_after=0
         try:
             with urllib.request.build_opener(urllib.request.ProxyHandler({})).open(urllib.request.Request(BASE+path,data=payload,method=method,headers=hdr),timeout=90) as r:
                 content=r.read();value=content if raw else json.loads(content)
             with LOCK:REPORT['operations'].append({'method':method,'route':path.split('/')[1] if '/' in path else path,'seconds':time.monotonic()-start,'retries':attempt,'request_bytes':len(payload or b'')})
             return value
         except urllib.error.HTTPError as e:
-            code=e.code;e.close()
-            if code not in (429,502,503,504) or attempt==3:raise RuntimeError('HTTP '+str(code)) from None
+            code=e.code;retry_after=min(30,float(e.headers.get('Retry-After','0')));e.close()
+            if code not in (429,502,503,504) or attempt==19:raise RuntimeError('HTTP '+str(code)) from None
         except (TimeoutError,urllib.error.URLError):
-            if attempt==3:raise
-        time.sleep(2*(attempt+1))
+            if attempt==19:raise
+        time.sleep(max(retry_after,min(10,2*(attempt+1)))+secrets.randbelow(1000)/1000)
+RESUME=json.loads(os.environ.get('JWB_QA_RESUME','[]'))
 def register(i):
-    body={'label':'QA capacity recovery '+str(i),'identity':{'model':'QA-not-an-entrant','harness':'external stdlib'},'qa':True,'idempotency_key':secrets.token_hex(32)}
-    e=req('POST','/v2/attempts',body);assert req('POST','/v2/attempts',body)==e
+    if RESUME:
+        e=dict(RESUME[i]);own=req('GET','/v2/attempts/'+e['attempt_id'],token=e['capability_token']);assert own['qa'] is True and own['label']=='QA capacity recovery '+str(i)
+        REPORT['recovered_existing_registrations']=True
+    else:
+        body={'label':'QA capacity recovery '+str(i),'identity':{'model':'QA-not-an-entrant','harness':'external stdlib'},'qa':True,'idempotency_key':secrets.token_hex(32)}
+        e=req('POST','/v2/attempts',body);assert req('POST','/v2/attempts',body)==e
     e['path']='/v2/attempts/'+e['attempt_id'];e['data']=os.urandom(8*1024**2+17);e['sha256']=sha(e['data'])
     REPORT['entries'].append({'attempt_id':e['attempt_id'],'registration_receipt':BASE+e['receipt_url'],'sha256':e['sha256'],'bytes':len(e['data'])})
     return e
