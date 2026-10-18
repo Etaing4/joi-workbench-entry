@@ -1,0 +1,23 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"Joi portable follow-up entry v1 (entrant claims only)",
+ "type":"object",
+ "required":["schema_version","entry_id","baseline_ref","cohort","created_at","label","identity","state","review_state","tracks","events","artifacts","limitations"],
+ "properties":{
+  "schema_version":{"const":"joi-portable-entry/1"},
+  "entry_id":{"type":"string","pattern":"^FU-[0-9a-f-]{36}$"},
+  "baseline_ref":{"const":"JOI-WORKBENCH-20261017-01"},
+  "cohort":{"type":"object","required":["id","kind","retry_of"],"properties":{"id":{"type":"string","pattern":"^FOLLOWUP-[0-9a-f-]{36}$"},"kind":{"const":"follow-up"},"retry_of":{"type":["string","null"],"pattern":"^E(0[1-9]|10)$"}}},
+  "created_at":{"type":"string"},"label":{"type":"string","maxLength":200},
+  "identity":{"type":"object","required":["model","harness","provider","native_session_id","installed_cli"],"properties":{"model":{"$ref":"#/$defs/claim"},"harness":{"$ref":"#/$defs/claim"},"provider":{"$ref":"#/$defs/claim"},"native_session_id":{"$ref":"#/$defs/claim"},"installed_cli":{"type":"array","items":{"type":"object","required":["name","version","provenance","scope"],"properties":{"name":{"type":"string"},"version":{"type":"string"},"provenance":{"enum":["observed_executable","unknown"]},"scope":{"type":"string"}}}}}},
+  "state":{"enum":["registered","running","blocked","submitted"]},"review_state":{"const":"pending"},
+  "tracks":{"type":"object","required":["A","B","C","D","E","F","G"],"additionalProperties":false,"properties":{"A":{"$ref":"#/$defs/track"},"B":{"$ref":"#/$defs/track"},"C":{"$ref":"#/$defs/track"},"D":{"$ref":"#/$defs/track"},"E":{"$ref":"#/$defs/track"},"F":{"$ref":"#/$defs/track"},"G":{"$ref":"#/$defs/track"}}},
+  "events":{"type":"array","maxItems":5000,"items":{"type":"object","required":["seq","at","kind","track","message","provenance"],"properties":{"seq":{"type":"integer","minimum":1},"at":{"type":"string"},"kind":{"enum":["started","checkpoint","blocked","artifact","submitted"]},"track":{"enum":["A","B","C","D","E","F","G",null]},"message":{"type":"string","maxLength":4000},"provenance":{"const":"self_reported"}}}},
+  "artifacts":{"type":"array","items":{"type":"object","required":["path","sha256","bytes"],"properties":{"path":{"type":"string","pattern":"^artifacts/"},"sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"bytes":{"type":"integer","minimum":0,"maximum":134217728}}}},
+  "limitations":{"type":"array","items":{"type":"string"}}
+ },
+ "$defs":{
+  "claim":{"type":"object","required":["value","provenance"],"properties":{"value":{"type":"string","maxLength":1000},"provenance":{"enum":["self_reported","unknown"]}}},
+  "track":{"type":"object","required":["state","summary","checks","artifacts","limitations"],"properties":{"state":{"enum":["not_attempted","running","completed","partial","blocked","failed"]},"summary":{"type":"string","maxLength":10000},"checks":{"type":"array"},"artifacts":{"type":"array","items":{"type":"string"}},"limitations":{"type":"array","items":{"type":"string"}}}}
+ }
+}
