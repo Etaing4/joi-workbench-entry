@@ -12,7 +12,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Twelve external clients sustained durable mutations (QA only)
-        run: python3 .github/scripts/accept_capacity.py
+        run: python3 .github/scripts/resume_capacity.py
         env:
           JWB_QA_RESUME: ${{ secrets.JWB_QA_CAPACITY_RESUME }}
       - uses: actions/upload-artifact@v4
