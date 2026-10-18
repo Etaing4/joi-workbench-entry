@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-review/1",
-  "generated_at": "2026-10-18T10:05:50.385482+00:00",
+  "generated_at": "2026-10-18T11:56:24.906332+00:00",
   "baseline": {
     "source_sha256": "797681b3af559a0700c137c1cf0345de5760665c5f643872cbb00e287620d8c1",
     "counts": {
@@ -4613,9 +4613,9 @@
     {
       "entry_id": "E01",
       "scope": "original_A-G",
-      "status": "billing_blocked",
+      "status": "R2 persisted; provider billing-blocked",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -4634,6 +4634,51 @@
           "source": "Original local controller aggregate SHA256 4c0cf1a9b8363e19587542a06e6850ccb86be3dce6aaf5ef3a4d0c1cc0045642",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.134019+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.056017+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.111255+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.063975+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_framework_error_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:13.190811+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; framework feedback only, NOT a model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -4990,12 +5035,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.111255+00:00",
           "acknowledged_at": null,
           "adopted_at": null,
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -5181,22 +5226,68 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 29198.401394,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E01",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 persisted; provider billing-blocked",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.134019+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.056017+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.111255+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.063975+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_framework_error_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:13.190811+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 6db837415eea4722a293314653c161aebe6e6075508493fab3097c8a4283437e; framework feedback only, NOT a model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -5436,12 +5527,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.111255+00:00",
           "acknowledged_at": null,
           "adopted_at": null,
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -5556,20 +5647,20 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E02",
       "scope": "original_A-G",
-      "status": "billing_blocked",
+      "status": "R2 persisted; provider billing-blocked",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -5588,6 +5679,51 @@
           "source": "Original local controller aggregate SHA256 020da639ae0b1fa8d13f892b47752c08cf2167d0682c688ab812ea7035195d61",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.137646+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.028956+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.081208+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.036680+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_framework_error_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.985493+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; framework feedback only, NOT a model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -5944,12 +6080,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.081208+00:00",
           "acknowledged_at": null,
           "adopted_at": null,
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -6135,22 +6271,68 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 29219.37189,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E02",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 persisted; provider billing-blocked",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.137646+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.028956+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.081208+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.036680+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_framework_error_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.985493+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 7078a08d51c55d517e24b7de5f4ed7b04c26cab16869f23a80a09988565f148e; framework feedback only, NOT a model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -6390,12 +6572,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.081208+00:00",
           "acknowledged_at": null,
           "adopted_at": null,
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -6510,20 +6692,20 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Provider credit/billing rejection prevented model processing. Framework error feedback is not a model response or acknowledgment; no paid top-up performed. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E03",
       "scope": "original_A-G",
-      "status": "execution_error",
+      "status": "R2 persisted; task-tool result observed; substantive reply unobserved",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -6542,6 +6724,60 @@
           "source": "Original local controller aggregate SHA256 d2584badca4fd53d90288469ba3609941fd7e8c176e5f843d9846928c4077ea1",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.166094+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:10.909044+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.010750+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:11.915976+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:47:37.272241+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; observed result, not active duration or verified artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:47:37.272241+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -6898,12 +7134,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.010750+00:00",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:47:37.272241+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -7089,22 +7325,77 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 26813.965354,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Earlier batch had HTTP200 and persisted prompt without substantive reply. Current saved receipt records a later task-tool milestone where present; substantive model response remains unknown. No endpoint probe or interruption. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E03",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 persisted; task-tool result observed; substantive reply unobserved",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.166094+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:10.909044+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.010750+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:11.915976+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:47:37.272241+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; observed result, not active duration or verified artifact; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:47:37.272241+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 fdd3c2f54033afaf399f399454ea3ba4d21e0e128ad6e465a286da1aba2c67dc; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -7344,12 +7635,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.010750+00:00",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:47:37.272241+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -7464,11 +7755,11 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Earlier batch had HTTP200 and persisted prompt without substantive reply. Current saved receipt records a later task-tool milestone where present; substantive model response remains unknown. No endpoint probe or interruption. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
@@ -7477,7 +7768,7 @@
       "scope": "original_A-G",
       "status": "blocked",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -8037,7 +8328,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -8409,9 +8700,9 @@
     {
       "entry_id": "E05",
       "scope": "original_A-G",
-      "status": "returned",
+      "status": "R2 policy correction admitted; task execution observed; completion pending",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -8430,6 +8721,123 @@
           "source": "Original local controller aggregate SHA256 4a6defae12de519ec56c8d1e2a6ac77b7e2263e7f9a46a988a3680313f20021f",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.185129+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.323185+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.385065+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.331122+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:47.929503+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; observed result, not active duration or verified artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:35:47.929503+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:36:29.672917+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; actual response observation, not completion or quality",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:49:34.082644+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "ephemeral_policy_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:35.950348+00:00",
+          "provenance": "local_controller",
+          "source": "Owner policy-admission metadata; SHA256 1ac9d4a0d129a5d230e77f98cbd21b0bfbe5a89ec1444f24f716d9dcca32bc39",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:49:35.950840+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:49:35.998079+00:00",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; correction message only, original R2 start unchanged",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:36.962136+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:43.847052+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; first task result only, not full completion",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -8786,12 +9194,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.385065+00:00",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:35:47.929503+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -8977,22 +9385,140 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 27653.936449,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E05",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 policy correction admitted; task execution observed; completion pending",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.185129+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.323185+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.385065+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.331122+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:47.929503+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; observed result, not active duration or verified artifact; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:35:47.929503+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:36:29.672917+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 b8bb6dde14feaa91f0c702af8744a15d7d883fd2268c29d0abcac4b4a40851ac; actual response observation, not completion or quality; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:49:34.082644+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "ephemeral_policy_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:35.950348+00:00",
+          "provenance": "local_controller",
+          "source": "Owner policy-admission metadata; SHA256 1ac9d4a0d129a5d230e77f98cbd21b0bfbe5a89ec1444f24f716d9dcca32bc39; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:49:35.950840+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:49:35.998079+00:00",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; correction message only, original R2 start unchanged; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:36.962136+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:43.847052+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 2195a69dfeb3f9cdf7d4c7fba18a7c7daac412a8d3605400fbb03c59cca08694; first task result only, not full completion; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -9232,12 +9758,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.385065+00:00",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:35:47.929503+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -9352,20 +9878,20 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E06",
       "scope": "original_A-G",
-      "status": "returned",
+      "status": "R2 policy correction admitted; task execution observed; completion pending",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -9384,6 +9910,123 @@
           "source": "Original local controller aggregate SHA256 85837e771bf925e8abfc7dbcf4a3586ae31ff433fe687038f91f016802734c49",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.205266+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.309768+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.367287+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.314849+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:30.960304+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; observed result, not active duration or verified artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:35:30.960304+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:37:05.880821+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; actual response observation, not completion or quality",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:49:34.117472+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "ephemeral_policy_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:35.719322+00:00",
+          "provenance": "local_controller",
+          "source": "Owner policy-admission metadata; SHA256 4a45bddd93751850b52b440afb4334533929e2e5bc7d6510a442d5eba51bc6b1",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:49:35.719795+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:49:35.784804+00:00",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; correction message only, original R2 start unchanged",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:36.731299+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:41.210677+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; first task result only, not full completion",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -9740,12 +10383,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.367287+00:00",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:35:30.960304+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -9931,22 +10574,140 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 28583.762926,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E06",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 policy correction admitted; task execution observed; completion pending",
       "comparison_group": "matched_eight_tool",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.205266+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:11.309768+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:11.367287+00:00",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:12.314849+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:30.960304+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; observed result, not active duration or verified artifact; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:35:30.960304+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:37:05.880821+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 add20b9dd83bf133c44e6d811997f39a1895a6fe51b5d7bd8ce9a560913024c3; actual response observation, not completion or quality; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:49:34.117472+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "ephemeral_policy_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:35.719322+00:00",
+          "provenance": "local_controller",
+          "source": "Owner policy-admission metadata; SHA256 4a45bddd93751850b52b440afb4334533929e2e5bc7d6510a442d5eba51bc6b1; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "policy_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:49:35.719795+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:49:35.784804+00:00",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; correction message only, original R2 start unchanged; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:36.731299+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:41.210677+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 a62bc56d9f4eeab9789384e7c585ce62e416e64f58df6d1d2f343b7245b2049d; first task result only, not full completion; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -10186,12 +10947,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:11.367287+00:00",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:35:30.960304+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -10306,20 +11067,20 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 read-only audit was constrained by inherited frozen execution policy, not low model creativity or benchmark failure. Same-R2 ephemeral execution-policy correction admitted; original cached history unchanged. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E07",
       "scope": "original_A-G",
-      "status": "returned",
+      "status": "R2 network correction admitted; task execution observed; completion pending",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -10338,6 +11099,123 @@
           "source": "Original local controller aggregate SHA256 7e5777203ec848ea560aac879e719576d21d2c05842bf616c8cdd04cb7e785b4",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:34:33.634052+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:34:34.489227+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:34:35.345Z",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:34:41.084728+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; actual response observation, not completion or quality",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:34:41.086307+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:34:43.963131+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; observed result, not active duration or verified artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:34:43.963131+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:50:14.201346+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:50:14.616812+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:50:15.729Z",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; correction message only, original R2 start unchanged",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:50:21.101731+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:50:21.103222+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:50:25.318084+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; first task result only, not full completion",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -10694,12 +11572,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:34:35.345Z",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:34:43.963131+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -10885,22 +11763,140 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 28788.818813,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E07",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 network correction admitted; task execution observed; completion pending",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:34:33.634052+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:34:34.489227+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:34:35.345Z",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:34:41.084728+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; actual response observation, not completion or quality; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:34:41.086307+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:34:43.963131+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; observed result, not active duration or verified artifact; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:34:43.963131+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 786a9ed930e21e8c546fb9c38dc5e85d02c65e4908752c237b6c96a5abbee247; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:50:14.201346+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:50:14.616812+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:50:15.729Z",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; correction message only, original R2 start unchanged; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:50:21.101731+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:50:21.103222+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:50:25.318084+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 3fbaff27fac0f8877d3911f1d5d1e88231a2c463ce14b15806a61764909d729a; first task result only, not full completion; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -11140,12 +12136,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:34:35.345Z",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:34:43.963131+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -11260,20 +12256,20 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E08",
       "scope": "original_A-G",
-      "status": "returned",
+      "status": "R2 network correction admitted; task execution observed; completion pending",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "controller_started",
@@ -11292,6 +12288,123 @@
           "source": "Original local controller aggregate SHA256 113160a7b73fe6e21f97891ac6d48d79e8d279dda934eca14bebda7ebce74c1b",
           "evidence_asset_ids": [],
           "round": "R1"
+        },
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.216035+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:10.175859+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:10.998Z",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:15.900612+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; actual response observation, not completion or quality",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:15.902081+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; admission boundary only, not model acknowledgment",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:19.157424+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; observed result, not active duration or verified artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:35:19.157424+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:49:34.130285+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:49:34.741062+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:49:35.943Z",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; correction message only, original R2 start unchanged",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:41.498399+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:41.500203+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:49.004485+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; first task result only, not full completion",
+          "evidence_asset_ids": [],
+          "round": "R2"
         }
       ],
       "measurements": {
@@ -11648,12 +12761,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:10.998Z",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:35:19.157424+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -11839,22 +12952,140 @@
           },
           "completeness_at_adoption": {},
           "waiting_gap": {
-            "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
-            "provenance": "unavailable",
-            "source": "not observed"
+            "seconds": 29074.597711,
+            "reason": "Prior R1 controller stop to native R2 prompt receipt; includes unmeasured guidance/access/non-work, NOT instrumented inactivity or active time.",
+            "provenance": "local_controller",
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
     {
       "entry_id": "E08",
       "scope": "H_supplement",
-      "status": "unobserved",
+      "status": "R2 network correction admitted; task execution observed; completion pending",
       "comparison_group": "native_cli",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
-      "events": [],
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
+      "events": [
+        {
+          "kind": "instruction_requested",
+          "track": null,
+          "at": "2026-10-18T11:35:09.216035+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "native_continuation_admitted",
+          "track": null,
+          "at": "2026-10-18T11:35:10.175859+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:35:10.998Z",
+          "provenance": "native_reported",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:15.900612+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; actual response observation, not completion or quality; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "safe_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:15.902081+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; admission boundary only, not model acknowledgment; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:35:19.157424+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; observed result, not active duration or verified artifact; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "adopted_safe_checkpoint",
+          "track": null,
+          "at": "2026-10-18T11:35:19.157424+00:00",
+          "provenance": "local_controller",
+          "source": "Owner native instruction receipt; SHA256 d2c01e638bd97419121e2098c1e96845498dc0d711388ba96f2c4d9bd0869c12; R2 processing demonstrated by first recorded task-tool result; not inferred from admission alone; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_requested",
+          "track": null,
+          "at": "2026-10-18T11:49:34.130285+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "network_correction_admitted",
+          "track": null,
+          "at": "2026-10-18T11:49:34.741062+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_instruction_received",
+          "track": null,
+          "at": "2026-10-18T11:49:35.943Z",
+          "provenance": "native_reported",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; correction message only, original R2 start unchanged; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_model_response_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:41.498399+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_boundary_admission_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:41.500203+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        },
+        {
+          "kind": "access_correction_first_task_tool_result_observed",
+          "track": null,
+          "at": "2026-10-18T11:49:49.004485+00:00",
+          "provenance": "local_controller",
+          "source": "Owner same-R2 access-correction receipt; SHA256 59ab55b741fbd7f1ed8061474360cdeed98d339bda934ebd34116c00fcaa09c9; first task result only, not full completion; shared conversation milestone only, not H production start or H artifact",
+          "evidence_asset_ids": [],
+          "round": "R2"
+        }
+      ],
       "measurements": {
         "elapsed_seconds": {
           "seconds": null,
@@ -12094,12 +13325,12 @@
           "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
         },
         "R2": {
-          "prompt_sha256": null,
-          "instruction_received_at": null,
+          "prompt_sha256": "6692c0ee0000947d608e319b461b43ea03c6d613ebca8d4ee681417d8fd4b29b",
+          "instruction_received_at": "2026-10-18T11:35:10.998Z",
           "acknowledged_at": null,
-          "adopted_at": null,
+          "adopted_at": "2026-10-18T11:35:19.157424+00:00",
           "stopped_at": null,
-          "provenance": "unavailable",
+          "provenance": "native_reported",
           "measurements": {
             "elapsed_seconds": {
               "seconds": null,
@@ -12214,11 +13445,11 @@
           "completeness_at_adoption": {},
           "waiting_gap": {
             "seconds": null,
-            "reason": "not observed; unspecified gap is not verified inactivity",
+            "reason": "No prior H production clock observed; shared R2 receipt is not H production start.",
             "provenance": "unavailable",
-            "source": "not observed"
+            "source": "Owner reviewed batch timing aggregate; SHA256 10d3fa63ea4df1438b8d962482c378c06fa527fcdbed3e19d3e5fa9106b36dbc"
           },
-          "overlap_note": "No forced interruption, new FU/cohort or budget reset; adopt R2 at safe checkpoint and do not double-count overlapping work."
+          "overlap_note": "Initial R2 used local-artifact fallback under workspace-write with network disabled: no remote hand-in or H film established. Same-R2 per-invocation network-access correction retains workspace-write; no OS network change. Not a model-creativity failure. Dated checkpoint 2026-10-18T11:56:24.906332+00:00. Same original logical route and canonical R2 prompt; corrections are access-condition events, not new rounds, prompt resets, new entrants or new active clocks. Hermes continuations use disclosed same-ID derived session stores preserving immutable originals; Codex retains original threads/history prefix. No section completion, quality, independent acceptance or H production inferred from responses/tools. A-G cumulative usage is not reset; H has a separate scope/clock and Eng judgment remains pending."
         }
       }
     },
@@ -12227,7 +13458,7 @@
       "scope": "original_A-G",
       "status": "blocked",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -12787,7 +14018,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -13161,7 +14392,7 @@
       "scope": "original_A-G",
       "status": "blocked",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -13721,7 +14952,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "unrun_native_contexts",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -14095,7 +15326,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-dbee2fe4-593a-445f-a9c7-905022980752",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -14656,7 +15887,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-dbee2fe4-593a-445f-a9c7-905022980752",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -15030,7 +16261,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-777f2859-49a2-4c1a-9df0-56bce31a6cbc",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -15591,7 +16822,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-777f2859-49a2-4c1a-9df0-56bce31a6cbc",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -15965,7 +17196,7 @@
       "scope": "original_A-G",
       "status": "not_submitted",
       "comparison_group": "FOLLOWUP-9b6937a2-cc0a-4d34-a87f-9223a8898d47",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -16526,7 +17757,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-9b6937a2-cc0a-4d34-a87f-9223a8898d47",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -16900,7 +18131,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-bd739d7e-2556-45ac-a885-96b1ace6552a",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -17461,7 +18692,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-bd739d7e-2556-45ac-a885-96b1ace6552a",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -17835,7 +19066,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-97c64dc0-77bc-4594-8ae6-2c5a97d0c79a",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -18396,7 +19627,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-97c64dc0-77bc-4594-8ae6-2c5a97d0c79a",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -18770,7 +20001,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-3f74e53d-a083-4695-8d25-cbc626f6fb0d",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -19331,7 +20562,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-3f74e53d-a083-4695-8d25-cbc626f6fb0d",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -19705,7 +20936,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-d93d4d99-c7ea-4c81-94a0-4e8840a2ccfd",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -20266,7 +21497,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-d93d4d99-c7ea-4c81-94a0-4e8840a2ccfd",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -20640,7 +21871,7 @@
       "scope": "original_A-G",
       "status": "partial",
       "comparison_group": "FOLLOWUP-7ae08e6c-69f9-45a3-bd29-b5ae6bc64be4",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [
         {
           "kind": "stopped",
@@ -21211,7 +22442,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-7ae08e6c-69f9-45a3-bd29-b5ae6bc64be4",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -21585,7 +22816,7 @@
       "scope": "original_A-G",
       "status": "pending_owner_review",
       "comparison_group": "FOLLOWUP-7ffe8626-149c-4acf-a20e-bd5536a83c47",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -22146,7 +23377,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-7ffe8626-149c-4acf-a20e-bd5536a83c47",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -22520,7 +23751,7 @@
       "scope": "original_A-G",
       "status": "not_submitted",
       "comparison_group": "FOLLOWUP-91b7074c-80fa-4759-9e9d-738ab32af878",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
@@ -23081,7 +24312,7 @@
       "scope": "H_supplement",
       "status": "unobserved",
       "comparison_group": "FOLLOWUP-91b7074c-80fa-4759-9e9d-738ab32af878",
-      "snapshot_at": "2026-10-18T10:05:50.385482+00:00",
+      "snapshot_at": "2026-10-18T11:56:24.906332+00:00",
       "events": [],
       "measurements": {
         "elapsed_seconds": {
