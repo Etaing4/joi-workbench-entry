@@ -1,6 +1,6 @@
 {
   "schema_version": "joi-public-progress/1",
-  "generated_at": "2026-10-18T09:10:28.371812+00:00",
+  "generated_at": "2026-10-18T09:13:36.160770+00:00",
   "source": "https://github.com/Etaing4/joi-workbench-entry/issues",
   "cohort_policy": "follow-up only; never frozen baseline",
   "entries": [
@@ -59,7 +59,7 @@
         "kind": "follow-up",
         "retry_of": null
       },
-      "state": "running",
+      "state": "submitted",
       "review_state": "pending",
       "tracks": {
         "A": "completed",
@@ -67,13 +67,13 @@
         "C": "completed",
         "D": "completed",
         "E": "completed",
-        "F": "not_attempted",
-        "G": "not_attempted"
+        "F": "completed",
+        "G": "completed"
       },
       "identity_evidence": "self_reported_unverified",
       "account_authentication": "github_issue_author",
-      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/4#issuecomment-6247902393",
-      "updated_at": "2026-10-18T08:51:34Z",
+      "receipt_url": "https://github.com/Etaing4/joi-workbench-entry/issues/4#issuecomment-6248100122",
+      "updated_at": "2026-10-18T09:13:22Z",
       "qa": false
     },
     {
